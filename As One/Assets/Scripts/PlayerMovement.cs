@@ -6,12 +6,11 @@ public class PlayerMovement : MonoBehaviour
 {
     // To-DO: use acceleration
     public float acceleration;
-
-
-    float yRotateSpeed = 1f;
-    float yRotation = 0f;
+    
     public CharacterController controller;
-    public float speed = 5f;
+    public float rotationSpeed = 1f;
+    public float moveSpeed = 0.1f;
+    private Vector3 rotation;
 
     // Start is called before the first frame update
     void Start()
@@ -27,18 +26,10 @@ public class PlayerMovement : MonoBehaviour
     // for consistency 
     private void FixedUpdate() 
     {
-        // rotation
-        if (Input.GetKey("left") || Input.GetKey("right")) { 
-            yRotation = Input.GetKey("left") ? -yRotateSpeed : yRotateSpeed;
-            transform.Rotate(Vector3.up * yRotation);
-        }
-       
-       // position
-       if (Input.GetKey("up") || Input.GetKey("down")) { 
-            float moveX = Input.GetAxis("Horizontal");
-            float moveZ = Input.GetAxis("Vertical");
-            Vector3 move = transform.right * moveX + transform.forward * moveZ;
-            controller.Move(move * speed);
-       }
+        rotation = new Vector3(0, Input.GetAxis("Horizontal") * rotationSpeed, 0);
+        Vector3 move = new Vector3(0, 0, Input.GetAxis("Vertical"));
+        move = transform.TransformDirection(move);
+        controller.Move(move * moveSpeed);
+        transform.Rotate(rotation);
     }
 }
