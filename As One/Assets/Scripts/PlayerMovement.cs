@@ -9,15 +9,11 @@ public class PlayerMovement : MonoBehaviour
     public float moveSpeed = 0.01f;
 
     // constants
-    private float accelerationDiff = 0.001f;
-    private float deceleration = 0.002f;
-    private float accelerationMax = 0.2f;
-    private float speedMax = 1f;
-    
+    private float accelerationDiff = 0.07f;
+    private float deceleration = 0.2f;
+    private float speedMax = 0.8f;
+
     // state
-    private float acceleration;
-    private Vector3 move;
-    private Vector3 lastMove; // for drag
     private Vector3 rotation;
 
     // Start is called before the first frame update
@@ -35,26 +31,15 @@ public class PlayerMovement : MonoBehaviour
     // for consistency 
     private void FixedUpdate() 
     {
-        // resistance
-        if (Input.GetKey("up") || Input.GetKey("down")) { 
-            acceleration += accelerationDiff;
-            move = new Vector3(0, 0, Input.GetAxis("Vertical"));
-            move = transform.TransformDirection(move);
-            lastMove = move;
-        } else { 
-            acceleration -= deceleration;
-            if (acceleration > 0) { 
-                move = lastMove;
-            } else { 
-                move = Vector3.zero;
-            }
-        }
-        acceleration = Mathf.Clamp(acceleration, 0, accelerationMax);
-        moveSpeed = Mathf.Clamp(moveSpeed + acceleration, 0, speedMax);
-
-        controller.Move(move * moveSpeed);
         rotation = new Vector3(0, Input.GetAxis("Horizontal") * rotationSpeed, 0);
         transform.Rotate(rotation);
+        // accel and decel
+        if (Input.GetKey("up")) { 
+            moveSpeed += accelerationDiff;
+        } else {
+            moveSpeed -= deceleration;
+        }
+        moveSpeed = Mathf.Clamp(0, moveSpeed, speedMax);
+        transform.position += transform.forward * Time.fixedDeltaTime * moveSpeed;
     }
-    
 }
