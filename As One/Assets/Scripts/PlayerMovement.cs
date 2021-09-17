@@ -6,12 +6,12 @@ public class PlayerMovement : MonoBehaviour
 {
     public CharacterController controller;
     public float rotationSpeed = 1f;
-    public float moveSpeed = 0.1f;
+    public float moveSpeed = 0.01f;
 
     // constants
-    private float accelerationDiff = 0.01f;
-    private float deceleration = 0.02f;
-    private float accelerationMax = 0.5f;
+    private float accelerationDiff = 0.001f;
+    private float deceleration = 0.002f;
+    private float accelerationMax = 0.2f;
     private float speedMax = 1f;
     
     // state
