@@ -15,11 +15,12 @@ public class PlayerMovement : MonoBehaviour
 
     // state
     private Vector3 rotation;
+    private bool climbing;
 
     // Start is called before the first frame update
     void Start()
     {
-
+        climbing = false;
     }
 
     // Update is called once per frame
@@ -34,12 +35,36 @@ public class PlayerMovement : MonoBehaviour
         rotation = new Vector3(0, Input.GetAxis("Horizontal") * rotationSpeed, 0);
         transform.Rotate(rotation);
         // accel and decel
-        if (Input.GetKey("up")) { 
-            moveSpeed += accelerationDiff;
+        if (Input.GetKey("up")) {
+            //moveSpeed += accelerationDiff;
+            if (climbing)
+            {
+                transform.position = new Vector3(transform.position.x, transform.position.y + 0.2f, transform.position.z);
+            }
+            else
+            {
+                moveSpeed += accelerationDiff;
+            }
         } else {
             moveSpeed -= deceleration;
         }
         moveSpeed = Mathf.Clamp(0, moveSpeed, speedMax);
         transform.position += transform.forward * Time.fixedDeltaTime * moveSpeed;
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Wall")
+        {
+            climbing = true;
+        }
+    }
+
+    void OnTriggerExit(Collider other)
+    {
+        if (other.tag == "Wall")
+        {
+            climbing = false;
+        }
     }
 }
