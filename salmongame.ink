@@ -120,7 +120,7 @@ You swim downstream. You are quickly carried away by the current.
             + + + + Yes, I'm sure. 
                     + + + + + Return -> ocean1
          + + +  That's intersting to hear. Sometimes I think about if I actually want to go to the estuary...
-            + + + + + Return -> ocean1
+            + + + + Return -> ocean1
 
 = west 
 ->estuary //replace with character dialogue
