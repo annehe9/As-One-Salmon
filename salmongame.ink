@@ -153,7 +153,14 @@ Inside is message detailing the struggles a person has with the life they are li
     * {took_shrimp or ate_shrimp} Return
 - You return to the north.
 ->estuary
->>>>>>> Stashed changes
+
+=== vegan_seagull ===
+You see another seagull. You make eye contact.
++ Run away ->estuary
++ Talk
+    {I'm vegan. It's better for the environment. | It reduces CO2 emissions and saves water. | Do you want to know more? Cryptocurrency and NFTs are also terrible. | I don't know what else to say. Go look it up.}
+    You return.
+    ->estuary
 
 === sunrise ===
 - You see a beautiful sunrise. A firey light spills out over the horizon and engulfs the ocean. It is breathtaking.
@@ -171,8 +178,9 @@ You reach the estuary.
 + Talk to fish ->fish1
 + Talk to fish ->fish2
 + Talk to fish ->fish3
-+ {not search1} Search around ->search1
-+ {search1} Search around -> search2
++ Search around here ->search1
++ Search around over there-> search2
++ Wander ->vegan_seagull
 
 === fish1 ===
 something
