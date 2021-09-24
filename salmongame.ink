@@ -66,10 +66,14 @@ You swim downstream. You are quickly carried away by the current.
 
 === ocean1 ===
 - You are now freed from the narrative text. You swim around freely and explore.
++ Talk to Seagull 
+{Squawk! The seagull swipes at you, nearly missing. Scary. | Scram, kid.} 
+-> ocean1
 + [Go North] -> north
 + [Go East] -> east
 + [Go West] -> west
 + [Go South] -> south
+
 
 = north
 - You go north.
@@ -122,6 +126,7 @@ You swim downstream. You are quickly carried away by the current.
          + + +  That's intersting to hear. Sometimes I think about if I actually want to go to the estuary...
             + + + + Return -> ocean1
 
+<<<<<<< Updated upstream
 = west 
 You come across a pair of sea horses
 they talk to you about their relationship and life with their children
@@ -131,6 +136,24 @@ they talk to you about their relationship and life with their children
 You come across a message in a bottle or a series of these bottles drifting at sea 
 Inside is message detailing the struggles a person has with the life they are living and the choices that they made. This can either be message meant to encourage the recipient to make their own decision or to talk about how great their life is now that they have decided for themselves or how shitty their life is after they decided to follow the crowd.
 ->estuary //replace with character dialogue
+=======
+=== search1 ===//idk this is more of a tech test
+{not took_plastic} \*Triumphant music\* You find a piece of plastic. Disgusting.
+* (took_plastic) {not took_plastic} Take
+* {not took_plastic} Do not
+* {took_plastic} Return
+- You return to the estuary.
+->estuary
+
+=== search2 ===//also add more here
+{not took_shrimp and not ate_shrimp: \*Triumphant music\* You find some shrimp. Tasty. | There's nothing here.} 
+    * (took_shrimp) {not took_shrimp and not ate_shrimp} Take
+    * (ate_shrimp) {not took_shrimp and not ate_shrimp} Eat
+    * {not took_shrimp and not ate_shrimp} Do not
+    * {took_shrimp or ate_shrimp} Return
+- You return to the north.
+->estuary
+>>>>>>> Stashed changes
 
 === sunrise ===
 - You see a beautiful sunrise. A firey light spills out over the horizon and engulfs the ocean. It is breathtaking.
@@ -141,6 +164,25 @@ Inside is message detailing the struggles a person has with the life they are li
 - You reach the estuary.
 * what the fuck is an estuary
 - It's where the river meets the sea.
+* Okay
+-There are lots of fish here, mulling around the waters. You can feel the energy in the air. The waves pulse with bodies flowing and shifting, the unmistakable glint of fish scales.
+-There is much to do here.
+* Talk to fish ->fish1
+* Talk to fish ->fish2
+* Talk to fish ->fish3
+* {not search1} Search around ->search1
+* {search1} Search around -> search2
 
+=== fish1 ===
+something
+->estuary
+
+=== fish2 ===
+something
+->estuary
+
+=== fish3 ===
+something
+->estuary
 
     -> END
