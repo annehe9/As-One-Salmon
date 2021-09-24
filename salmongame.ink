@@ -123,9 +123,13 @@ You swim downstream. You are quickly carried away by the current.
             + + + + + Return -> ocean1
 
 = west 
+You come across a pair of sea horses
+they talk to you about their relationship and life with their children
 ->estuary //replace with character dialogue
 
 = south
+You come across a message in a bottle or a series of these bottles drifting at sea 
+Inside is message detailing the struggles a person has with the life they are living and the choices that they made. This can either be message meant to encourage the recipient to make their own decision or to talk about how great their life is now that they have decided for themselves or how shitty their life is after they decided to follow the crowd.
 ->estuary //replace with character dialogue
 
 === sunrise ===
