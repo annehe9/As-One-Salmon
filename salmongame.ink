@@ -87,8 +87,40 @@ You swim downstream. You are quickly carried away by the current.
 +   No
     Okay...but just so you know, all of the other salmon are going there right now.
     + + Return -> ocean1
+    
 = east
-->estuary //replace with character dialogue
+- You go east.
++ You see a coral reef, waving at you with their elongated round body. 
+- Hey hey hey, you are new here. 
++   Yes 
+    Great! I love new friends! 
+    Nice to meet you too.
+    You know, it gets lonely down here. Every year, I meet so many of you...
+    So many of me? What do yo mean? 
+    Oh, I meant, so many of whom who looks exactly like you, and swim towards the exact destination.
+    Well... It was great meeting you. 
+    + + You swim back. -> ocean1
+    + + You want to ask them another question. 
+        Have you ever been there? You know, the estuary? 
+        Oh boy, I have not, and I find it interesting that I have been here forever, but I have never met any salmon heading back from the estuary...
+        I wonder why that's the case.. Did they decide to stay there forever because of how beautiful it is? 
+        I do not know my friend, but I hope that is the case. I hope the best for you. 
+            + + + Return -> ocean1 
++   No 
+    Well, welcome back. Isn't this place mesmerizing? 
+    + + Yes, and I want to know more about the estuary.
+        I would love to tell you more about it, but I just have never heard anything from any salmon who actually went there and came back. I'm so sorry. 
+        + + + Return -> ocean1
+    + + Yes, and I am just here to listen to you rambling on life. 
+        Somedays I doubt if I will be happier if I can swim. You know, us coral reefs live long long lives, between 5,000 and 10,000 years old. We see the same views everyday. But I know for a fact that just by being here, I'm helping the lives of other sea plants, and that makes my life meaningful. I don't have to have a impressive destination to get to. I am comfortable being where I am because that is what I want. 
+        + + + That's wonderful to hear. But you know, some of us just gotta go to places...
+            But is that what you actually want? For yourself?
+            + + + + I don't know... That was a lovely talk... But I have to head back now.
+                    + + + + + Return -> ocean1
+            + + + + Yes, I'm sure. 
+                    + + + + + Return -> ocean1
+         + + +  That's intersting to hear. Sometimes I think about if I actually want to go to the estuary...
+            + + + + + Return -> ocean1
 
 = west 
 ->estuary //replace with character dialogue
