@@ -250,8 +250,8 @@
      <Compile Include="Packages\com.unity.timeline\Editor\Signals\TreeView\SignalReceiverItem.cs" />
      <Compile Include="Packages\com.unity.timeline\Editor\Manipulators\Move\MovingItems.cs" />
      <Compile Include="Packages\com.unity.timeline\Editor\Manipulators\Move\MoveItemModeReplace.cs" />
-     <Compile Include="Packages\com.unity.timeline\Editor\inspectors\TrackAssetInspector.cs" />
      <Compile Include="Packages\com.unity.timeline\Editor\Window\PlaybackScroller.cs" />
+     <Compile Include="Packages\com.unity.timeline\Editor\inspectors\TrackAssetInspector.cs" />
      <Compile Include="Packages\com.unity.timeline\Editor\Utilities\Scopes\GUIGroupScope.cs" />
      <Compile Include="Packages\com.unity.timeline\Editor\Actions\MarkerActions.cs" />
      <Compile Include="Packages\com.unity.timeline\Editor\Utilities\AnimatedParameterUtility.cs" />
