@@ -154,12 +154,12 @@ You go north.
     I'm Bethany!
     ++ Hello to both of you. I'm new here.
        Cheers to new friends! We love meeting new friends. Actually, we enjoy doing everything together, old or new. 
-       Oh wow, that is impressive. How long have you two been together? You look lovely!
+       +++ Oh wow, that is impressive. How long have you two been together? You look lovely!
        We've been together for ten days, but I know we are soulmates already.
-       +++ I wish I had a relationship like that... I've always had commitment issues.
-           Oh no, that's terrible. As seahorses, once we find the one, we mate for life. We wish you that someday you will find your one and only love too. 
-           Thank you. I think that will happen once I get there, you know, the upstream place. It was so nice to meet you both. Bye!
-           ->ocean1 
+           ++++ I wish I had a relationship like that... I've always had commitment issues.
+               Oh no, that's terrible. As seahorses, once we find the one, we mate for life. We wish you that someday you will find your one and only love too. 
+               +++++ Thank you. I think that will happen once I get there, you know, the upstream place. It was so nice to meet you both. Bye!
+                    ->ocean1 
            
            
     ++ Right... Sorry it's been a while, my memory is a little foggy. 
@@ -187,10 +187,10 @@ You go north.
     Brad is feeling a bit under the weather as bearing the young is not an easy task. 
     ++ Oh congratulations! I didn't know that. Wait... Brad is bearing the baby? 
        Yes! Guess you didn't study the top ten unique animal facts.. ha ha. The male seahorses are the ones that carries and give birth to baby seahorses. It gives the female seahorses more time to prepare more eggs so the seahorse specie can thrive!
-       That is impressive! For salmon, it's the ordinary way. But, one thing I've always wondered about is what are the responsibilities for a male salmon when their partner is bearing the baby salmon. It is so strange that I've never heard about the story from anyone...
+       +++ That is impressive! For salmon, it's the ordinary way. But, one thing I've always wondered about is what are the responsibilities for a male salmon when their partner is bearing the baby salmon. It is so strange that I've never heard about the story from anyone...
        Same for us. We've never heard from anyone, or seen anyone who came back. 
-       +++ Interesting... I will ask around more. 
-           ->ocean1 
+           ++++ Interesting... I will ask around more. 
+               ->ocean1 
        
 
 
