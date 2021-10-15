@@ -27,7 +27,7 @@ You swim downstream. You are quickly carried away by the current.
     - You are not strong enough to go back.
         * Accept your fate
             - You let the current carry you downstream.
-            - Vast landscapes flash by. From the mountains, to forests, to rolling plains. You catch glimpses of society in the distance, ominous smokestacks billowing dark clouds. Everythin goes too quickly for you to focus on one particular thing.
+            - Vast landscapes flash by. From the mountains, to forests, to rolling plains. You catch glimpses of society in the distance, ominous smokestacks billowing dark clouds. Everything goes too quickly for you to focus on one particular thing.
             * [Continue]
                 - Suddenly, you are flying over a waterfall. You are buffeted by the rocks at the bottom. You catch a glimpse of the vast, dark blue sea before you pass out.
                 * [Black screen]
@@ -83,7 +83,7 @@ You swim downstream. You are quickly carried away by the current.
 
 = north
 You go north.
-* {not north} You see a fish and talk to them. 
+* You see a fish and talk to them. 
     Hello there! Are you headed to the estuary?
     + + Yes
         Me too! Before we go, do you want to see something cool?
@@ -94,13 +94,13 @@ You go north.
         + + + No
             Suit yourself.
             -> estuary
-    + + No
+    + + (notcoming) No
         Okay...but just so you know, all of the other salmon are going there right now.
         + + + Return -> ocean1
-* {north} You see a fish and talk to them.
+* {notcoming} You see a fish and talk to them.
     Are you ready to go now? You're going to be late.
     + + Yes
-        + + + Let's go! ->estuary
+        + + + Let's go! As you leave, something catches your eye. ->sunrise
     + + (refused_to_follow) No
         The fish looks upset at you, as much as a fish can emote. 
         Okay. I'm leaving.
@@ -154,12 +154,12 @@ You go north.
     I'm Bethany!
     ++ Hello to both of you. I'm new here.
        Cheers to new friends! We love meeting new friends. Actually, we enjoy doing everything together, old or new. 
-       Oh wow, that is impressive. How long have you two been together? You look lovely!
+       +++ Oh wow, that is impressive. How long have you two been together? You look lovely!
        We've been together for ten days, but I know we are soulmates already.
-       +++ I wish I had a relationship like that... I've always had commitment issues.
-           Oh no, that's terrible. As seahorses, once we find the one, we mate for life. We wish you that someday you will find your one and only love too. 
-           Thank you. I think that will happen once I get there, you know, the upstream place. It was so nice to meet you both. Bye!
-           ->ocean1 
+           ++++ I wish I had a relationship like that... I've always had commitment issues.
+               Oh no, that's terrible. As seahorses, once we find the one, we mate for life. We wish you that someday you will find your one and only love too. 
+               +++++ Thank you. I think that will happen once I get there, you know, the upstream place. It was so nice to meet you both. Bye!
+                    ->ocean1 
            
            
     ++ Right... Sorry it's been a while, my memory is a little foggy. 
@@ -187,10 +187,10 @@ You go north.
     Brad is feeling a bit under the weather as bearing the young is not an easy task. 
     ++ Oh congratulations! I didn't know that. Wait... Brad is bearing the baby? 
        Yes! Guess you didn't study the top ten unique animal facts.. ha ha. The male seahorses are the ones that carries and give birth to baby seahorses. It gives the female seahorses more time to prepare more eggs so the seahorse specie can thrive!
-       That is impressive! For salmon, it's the ordinary way. But, one thing I've always wondered about is what are the responsibilities for a male salmon when their partner is bearing the baby salmon. It is so strange that I've never heard about the story from anyone...
+       +++ That is impressive! For salmon, it's the ordinary way. But, one thing I've always wondered about is what are the responsibilities for a male salmon when their partner is bearing the baby salmon. It is so strange that I've never heard about the story from anyone...
        Same for us. We've never heard from anyone, or seen anyone who came back. 
-       +++ Interesting... I will ask around more. 
-           ->ocean1 
+           ++++ Interesting... I will ask around more. 
+               ->ocean1 
        
 
 
@@ -221,18 +221,18 @@ The journey was just too much for you. You died, never knowing what the future c
 ->END
 
 === search1 ===//idk this is more of a tech test
-+ {not took_plastic} \*Triumphant music\* You find a piece of plastic. Disgusting. But its shiny white surface...it beckons.
-* * {not took_plastic} Take
+{not took_plastic: \*Triumphant music\* You find a piece of plastic. Disgusting. But its shiny white surface...it beckons. | There's nothing here.}
+* {not took_plastic} Take
     ~ took_plastic = true
     You have no self control and took the plastic. You are now literally carrying trash around. You feel kind of silly.
-* * {not took_plastic} EAT IT
+* {not took_plastic} EAT IT
     You eat the forbidden fruit, in a humorous mood. 
     What's the worst that could happen?
     You died. What did you expect? ->END
-* * {not took_plastic} Do not
++ {not took_plastic} Do not
     It's gross so you left it alone.
-* * {took_plastic} Return
-- You return to the estuary.
++ {took_plastic} Return ->estuary
+-
 ->estuary
 
 === search2 ===//also add more here
@@ -244,8 +244,8 @@ The journey was just too much for you. You died, never knowing what the future c
     ~ ate_shrimp = true
     You eat the shrimp. You feel invigorated.
     * {not took_shrimp and not ate_shrimp} Do not
-    * {took_shrimp or ate_shrimp} Return
-- You return to the north.
+    * {took_shrimp or ate_shrimp} Return ->estuary
+-
 ->estuary
 
 === vegan_seagull ===
@@ -272,11 +272,16 @@ You reach the estuary.
 -There is much to do here.
 
 
-+ Search around here ->search1
-+ Search around over there-> search2
-+ Wander ->vegan_seagull
-+ Talk to fish ->estuaryfish
-+ Continue upstream ->keepswimming
++ Search around here 
+->search1
++ Search around over there
+-> search2
++ Wander 
+->vegan_seagull
++ Talk to fish 
+->estuaryfish
++ Continue upstream 
+->keepswimming
 
 === estuaryfish ===
 There are so many fish to talk to!
@@ -554,7 +559,7 @@ You continue climbing the falls.
 === salmon17again3 ===
 ~ talked_to += 1
 - They are too busy swimming to talk.
-* [Continue] ->keepswimming3
+* [Continue] ->keepswimming4
 
 === salmon17again4 ===
 ~ talked_to += 1
@@ -690,9 +695,9 @@ The longer we stay in freshwater, the weaker we get.
     
 === lake ===
 You did it! You reached the top of the stream, in the mountains. What will you do now?
-* Talk to non-salmon fish
++ Talk to non-salmon fish
     ->otherfish
-* Talk to salmon
++ Talk to salmon
     ->Coginthemachine
 * {talked_to >= 30} Turn back
     You don't feel like you belong here. You turn back. ->Thefriendswemadealongtheway
@@ -701,17 +706,24 @@ You did it! You reached the top of the stream, in the mountains. What will you d
     
 =otherfish
 Hello!
-* Hello.
-It's great to see you guys back.
++ Hello.
+-It's great to see you guys back.
 * It's actually my first time here...
-    - Oh yeah. You leave and then come back every year. 
+    Oh yeah. You guys leave and then come back at the same time every year. It's hard for a simple fish to keep track.
+    Well, I hope you enjoy the lake!
+    * * Return ->lake
 * Where is the treasure?
-    - Treasure?
+    Treasure?
     * * You know, I get to make a wish or something?
-        - ???
-        - The real treasure is the nature surrounding us! The magical phenomenon of life and rebirth!
+        ???
+        The real treasure is the nature surrounding us! The magical phenomenon of life and rebirth!
         * * * Umm that's cool and all but everyone told me they were looking for something here...
-            - That's for you to discover for yourself. I can't help you there. ->lake
+            That's for you to discover for yourself. I can't help you there. 
+            * * * * Return ->lake
++ Goodbye. 
+    Bye!
+    ->lake
+
 
 =Coginthemachine
 -You see salmon going through the whole process of finding a mate, but you notice another lone salmon off to the side. You swim up to them.
@@ -735,7 +747,7 @@ It's great to see you guys back.
     - do you have any dreams?
       *yes 
       *No
-      -that's nice...
+      -oh, that's nice...
      - ...Hey um now that we made it should we do that whole reproduction thing?
      *Sure
      ->reproduced
@@ -748,6 +760,7 @@ It's great to see you guys back.
 
 === cog ===
 - oh ok....well lets just do that whole reproduction thing
+* Continue
 ->reproduced
     
 
@@ -765,9 +778,11 @@ It's great to see you guys back.
 === reproduced ===
 You did it, you fulfilled your wordly obligation. But you don't feel satisfied. Is this it? Is this all there is to the world? You think back on your journey.
 - flashbacks to scenes.
-- {talked_to >= 30} No, it's not. You think about all the hopes and dreams of the salmon. They are worthwhile. They do mean something, and they mean something to you. You are too tired to swim any longer, and stare up at the twinkling stars.
+* {talked_to >= 30} No, it's not. 
+    You think about all the hopes and dreams of the salmon. They are worthwhile. They do mean something, and they mean something to you. You are too tired to swim any longer, and stare up at the twinkling stars.
     ->ending
-- {talked_to < 30} You think about the masses of fish swimming through the river as you float listlessly in the water, surrounded by darkness. The roaring sound of waves, the sound of nothingness...
+* {talked_to < 30} ...
+    You think about the masses of fish swimming through the river as you float listlessly in the water, surrounded by darkness. The roaring sound of waves, the sound of nothingness...
     ->ending
-
+ 
 
