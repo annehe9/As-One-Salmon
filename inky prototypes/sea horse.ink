@@ -1,5 +1,5 @@
-You go west.
-You come across a pair of sea horses
+- You go west.
+- You come across a pair of sea horses
 + Ask for their names
     I'm Brad!
     I'm Bethany!
