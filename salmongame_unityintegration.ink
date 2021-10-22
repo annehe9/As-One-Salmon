@@ -2,7 +2,6 @@ VAR took_plastic = false
 VAR took_shrimp = false
 VAR ate_shrimp = false
 VAR talked_to = 0
-VAR currentscene = -> keepswimming
 
 //this is where the game begins if you don't end your last game at the top of the stream
 == begin_narration ===
@@ -259,35 +258,35 @@ do you think they can see us? haha sorry, that was random. I've just been thinki
 - This is a monumental event.
 - A right of passage for our species, if you will.
 - You youngsters should take this more seriously. It's not a game.
-* [Continue] ->estuaryfish
+->END
 
 =salmon6dialogue
 ~ talked_to += 1
 -Lets go! I'm so pumped for this!!
-* [Continue] ->estuaryfish
+->END
 
 =salmon7dialogue
 ~ talked_to += 1
 - i'm coming along to support my friends. 
 - I don't really care about the treasure or wishes that are up there
 - but don't tell them i said that
-* [Continue] ->estuaryfish
+->END
 
 =salmon8dialogue
 ~ talked_to += 1
 - It's like we're setting out on an adventure!
-* [Continue] ->estuaryfish
+->END
 
 =salmon9dialogue
 ~ talked_to += 1
 - Swimming in a school is awesome!!
 - We're like one big fish!!
-* [Continue] ->estuaryfish
+->END
 
 =salmon10dialogue
 ~ talked_to += 1
 - I'm going to make it first. I've trained my whole life for this.
-* [Continue] ->estuaryfish
+->END
 
 =salmon11dialogue
 ~ talked_to += 1
@@ -298,7 +297,7 @@ do you think they can see us? haha sorry, that was random. I've just been thinki
 * what's a baker
     They don't seem to hear you. You are left to imagine what this mystical bakery is.
     It sounds nice, though. You hope you get to experience it one day.
-    * * [Continue] ->estuaryfish
+    ->END
     
 =salmon12dialogue
 ~ talked_to += 1
@@ -306,12 +305,12 @@ do you think they can see us? haha sorry, that was random. I've just been thinki
 - hey. hey you.
 - i heard theres a BIG treasure buried upstream.
 - you didn't hear it from me...
-* [Continue] ->estuaryfish
+->END
 
 =salmon13dialogue
 ~ talked_to += 1
 - when salmon run, it's like we're swimming as one!
-* [Continue] ->estuaryfish
+->END
 
 =salmon14dialogue
 ~ talked_to += 1
@@ -321,17 +320,17 @@ do you think they can see us? haha sorry, that was random. I've just been thinki
 - there's a big new-age fish society in the mountains
 - ...
 - and they are DEFINITELY aliens.
-* [Continue] ->estuaryfish
+->END
 
 =salmon15dialogue
 ~ talked_to += 1
 - I want to be the first in fishkind to make a map of this river!
-* [Continue] ->estuaryfish
+->END
 
 =salmon16dialogue
 ~ talked_to += 1
 - If I can get to the top, maybe I can be someone, you know?
-* [Continue] ->estuaryfish
+->END
 
 =ceo
 ~ talked_to += 1
@@ -341,7 +340,7 @@ I want to become the CEO!
 
 =ceocont
 The Chief Executive ofthe OCEAN!
-* [Continue] ->estuaryfish
+->END
 
 === rock ===
 ~ talked_to += 1
@@ -360,19 +359,19 @@ For me, I would be a rock.
         Are we any less alone out here? Tell me, did you ever have any meanintful interactions with any of the fish in this river?
         * * * Yes //if you talked to enough fish
             Well...maybe times have changed. There is hope for us after all.
-            ->upstreamarea
+            ->END
         + + + No
             See, I'm right. There is no meaning. All we can do is swim.
-            ->upstreamarea
+            ->END
     * * because you have no freedom.
         As fish, we have too many responsibilities, too many choices. I just want to be able to sit in this river and do nothing. I want to take a break and take in the beautiful scenery. Doesn't that sound like freedom to you?
-        ->upstreamarea
+        ->END
     * * because everyone swims all over you.
         I would get to see all the beautiful scenery and watch the fish and the days go by, sitting peacefully in the river. That doesn't sound so bad, doesn't it.
-        ->upstreamarea
+        ->END
 * That's cool.
     Yeah...I want to sit and watch the days go by, in the midst of nature. Not a thought in this head.
-    ->upstreamarea
+    ->END
     
 === forgotten ===
 ~ talked_to += 1
@@ -387,15 +386,15 @@ Hey, it's you again!
     * *Seeing the stars 
         ->continued
 * Who are you?
-    Ah, nevermind. I must have confused you with another fish. ->upstreamarea
+    Ah, nevermind. I must have confused you with another fish. ->END
     
 =continued
     Ah, I'm not sure what it was... those days seem so far away. 
     I was so naive at the time. They were just faraway dreams. I didn't know how to be serious. You and I, we need to focus on what's realistic.
         * * Right.
-            See? You understand. There's no time for trivial matters. We must fulfill our duties first. ->upstreamarea
+            See? You understand. There's no time for trivial matters. We must fulfill our duties first. ->END
         * * I don't understand.
-            You'll learn to understand to survive. ->upstreamarea
+            You'll learn to understand to survive. ->END
 
     
 === bear ===
@@ -406,131 +405,131 @@ A bear stands in the middle of the river, swiping its paw in the current, catchi
         The bear chokes and retches. 
         Why are you carrying literal garbage? You're disgusting!! Are you trying to kill me?
         Get out of my sight.
-        You escape with your life. ->upstreamarea
+        You escape with your life. ->END
     + + {not took_plastic}
             ->death
-+ You swim past safely. ->upstreamarea
++ You swim past safely. ->END
 
 === overlook ===
 You get to swim into a small area along the edge of the cliff and look at the scenery and how far you've come. //maybe put a lot of fog here because we don't want to have to model everything for one scene
-->upstreamarea
+->END
 
-=== keepswimming ===
-You keep swimming upstream.
-* [Talk] ->salmon17dialogue
-* [Talk] ->salmon20dialogue
-* [Talk] ->salmon21dialogue
-* [Talk] ->salmon21dialogue
-* [Talk] ->salmon19dialogue
-* [Talk] ->salmon22dialogue
-* [Talk] ->salmon21dialogue
-* [Talk] ->salmon20dialogue
-* [Talk] ->salmon18dialogue
-* [Talk] -> salmon21dialogue
-* [Talk] -> salmon20dialogue
-* [Talk] -> salmon21dialogue
-* [Talk] -> specialdialogue //only if you talked to everyone else
-+ [Done talking] ->keepswimming2
+//=== keepswimming ===
+//You keep swimming upstream.
+//* [Talk] ->salmon17dialogue
+//* [Talk] ->salmon20dialogue
+//* [Talk] ->salmon21dialogue
+//* [Talk] ->salmon21dialogue
+//* [Talk] ->salmon19dialogue
+//* [Talk] ->salmon22dialogue
+//* [Talk] ->salmon21dialogue
+//* [Talk] ->salmon20dialogue
+//* [Talk] ->salmon18dialogue
+//* [Talk] -> salmon21dialogue
+//* [Talk] -> salmon20dialogue
+//* [Talk] -> salmon21dialogue
+//* [Talk] -> specialdialogue //only if you talked to everyone else
+//+ [Done talking] ->keepswimming2
 
-=== keepswimming2 ===
-~ currentscene = -> keepswimming2
-* [Talk] ->salmon17again
-* [Talk] ->salmon21dialogue
-* [Talk] ->salmon20dialogue
-* [Talk] ->salmon21dialogue
-* [Talk] -> salmon22dialogue
-* [Talk] -> salmon21dialogue
-* [Talk] -> salmon20dialogue
-* [Talk] -> salmon21dialogue
-* [Talk] ->specialdialogue2 //only if you talked to everyone else
-+ [Done talking] ->keepswimming3
+//=== keepswimming2 ===
+//~ currentscene = -> keepswimming2
+//* [Talk] ->salmon17again
+//* [Talk] ->salmon21dialogue
+//* [Talk] ->salmon20dialogue
+//* [Talk] ->salmon21dialogue
+//* [Talk] -> salmon22dialogue
+//* [Talk] -> salmon21dialogue
+//* [Talk] -> salmon20dialogue
+//* [Talk] -> salmon21dialogue
+//* [Talk] ->specialdialogue2 //only if you talked to everyone else
+//+ [Done talking] ->keepswimming3
 
-=== keepswimming3 ===
-~ currentscene = -> keepswimming3
-You start swimming up the rapids.
-* [Talk] ->salmon17again2
-* [Talk] ->salmon22dialogue
-* [Talk] ->salmon21dialogue
-* [Talk] ->salmon23dialogue
-* [Talk] ->salmon21dialogue
-* [Talk] ->salmon20dialogue
-* [Talk] ->specialdialogue3
-+ [Done talking] ->keepswimming4
+//=== keepswimming3 ===
+//~ currentscene = -> keepswimming3
+//You start swimming up the rapids.
+//* [Talk] ->salmon17again2
+//* [Talk] ->salmon22dialogue
+//* [Talk] ->salmon21dialogue
+//* [Talk] ->salmon23dialogue
+//* [Talk] ->salmon21dialogue
+//* [Talk] ->salmon20dialogue
+//* [Talk] ->specialdialogue3
+//+ [Done talking] ->keepswimming4
 
-=== keepswimming4 ===
-~ currentscene = -> keepswimming4
-You continue climbing the falls.
-* [Talk] ->salmon17again3
-* [Talk] ->salmon21dialogue
-* [Talk] ->salmon24dialogue
-* [Talk] ->specialdialogue4
-+ [Done talking] ->upstreamarea
+//=== keepswimming4 ===
+//~ currentscene = -> keepswimming4
+//You continue climbing the falls.
+//* [Talk] ->salmon17again3
+//* [Talk] ->salmon21dialogue
+//* [Talk] ->salmon24dialogue
+//* [Talk] ->specialdialogue4
+//+ [Done talking] ->upstreamarea
 
 === salmon17dialogue ===
 ~ talked_to += 1
 - I will show the world!!
-* [Continue] ->keepswimming
+->END
 
 === salmon17again ===
 ~ talked_to += 1
 - that I!!!
-* [Continue] ->keepswimming2
+->END
 
 === salmon17again2 ===
 ~ talked_to += 1
 - wILL MAKE IT!!!!
-* [Continue] ->keepswimming3
+->END
 
 === salmon17again3 ===
 ~ talked_to += 1
 - They are too busy swimming to talk.
-* [Continue] ->keepswimming4
+->END
 
 === salmon17again4 ===
 ~ talked_to += 1
 - I'm tired now. That took a lot out of me.
-* [Continue] ->upstreamarea
+->END
 
 === salmon18dialogue ===
 ~ talked_to += 1
 - the current is so strong...
 - I don't know if I'm cut out for this...
-* [Continue] ->keepswimming
+->END
 
 === salmon19dialogue ===
 ~ talked_to += 1
 - Don't you think it's cool that we're one of the few species of animals that can do this? It's our destiny!
-* [Continue] ->keepswimming
+->END
 
 === salmon20dialogue ===
 ~ talked_to += 1
 - No time for chit chat.
-+ [Continue] -> currentscene
+->END
 
 === salmon21dialogue ===
 ~ talked_to += 1
 - We must swim.
-+ [Continue] -> currentscene
+->END
 
 === salmon22dialogue ===
 ~ talked_to += 1
 - We must keep moving forward.
-+ [Continue] -> currentscene
+->END
 
 === salmon23dialogue ===
 ~ talked_to += 1
 - So tired...can't rest
-+ [Continue] -> currentscene
+->END
 
 === salmon24dialogue ===
 ~ talked_to += 1
 - I want to go home...
-+ [Continue] -> currentscene
+->END
 
 === specialdialogue ===
 ~ talked_to += 1
 - Wow, you talked to so many fish here! Aren't you worried you won't make it upstream in time? You'll be left behind!
-+ [Continue] -> currentscene
+->END
 
 === specialdialogue2 ===
 ~ talked_to += 1
@@ -538,7 +537,7 @@ You continue climbing the falls.
 - Well, I can respect that.
 - The name's Salmone, by the way. ///asdfjd idk
 - You can call me Sam for short.
-+ [Continue] -> currentscene
+->END
 
 === specialdialogue3 ===
 ~ talked_to += 1
@@ -547,7 +546,7 @@ You continue climbing the falls.
 - Do you think there's another way?
 - You know, besides going upstream?
 - Just a thought.
-+ [Continue] -> currentscene
+->END
 
 === specialdialogue4 ===
 ~ talked_to += 1
@@ -562,19 +561,19 @@ You continue climbing the falls.
     * * Wait
         * * * It's me?
                 - You're glad too. Maybe you did find something on this journey after all.
-* [Continue] -> currentscene
+->END
 
-=== upstreamarea ===
-* [Talk] -> salmon17again4
-* {specialdialogue2} {specialdialogue3} {specialdialogue4} [Look for Sam]
-    You swim around but do not see them. 
-    You ask some of the fish but they haven't seen them either. ->upstreamarea
-* [Swim to overlook] ->overlook
-* [Bear] ->bear
-* [Talk] ->forgotten
-* [Talk] ->rock
-+ Take side path -> branching
-+ [Continue] -> journeyupstream
+//=== upstreamarea ===
+//* [Talk] -> salmon17again4
+//* {specialdialogue2} {specialdialogue3} {specialdialogue4} [Look for Sam]
+//    You swim around but do not see them. 
+//    You ask some of the fish but they haven't seen them either. ->upstreamarea
+//* [Swim to overlook] ->overlook
+//* [Bear] ->bear
+//* [Talk] ->forgotten
+//* [Talk] ->rock
+//+ Take side path -> branching
+//+ [Continue] -> journeyupstream
     
 === branching ===
 - You notice a fork in the river. Your instincts scream that this is the wrong way. Do you take it?
@@ -585,7 +584,7 @@ You continue climbing the falls.
     * *No, I made this decision impulsively. ->cont
 + Do not
     You do not take the path, feeling a bit relieved.
-    ->upstreamarea
+    ->END
 
 =cont
  - Either way, you are not turning back.
@@ -603,7 +602,7 @@ You continue climbing the falls.
     
 === weak ===
 The longer we stay in freshwater, the weaker we get.
-* [Continue] -> journeyupstream
+->END
 
 === journeyupstream ===
 * [Talk] -> weak
@@ -636,7 +635,7 @@ Hello!
 * It's actually my first time here...
     Oh yeah. You guys leave and then come back at the same time every year. It's hard for a simple fish to keep track.
     Well, I hope you enjoy the lake!
-    * * Return ->lake
+    ->END
 * Where is the treasure?
     Treasure?
     * * You know, I get to make a wish or something?
@@ -644,10 +643,10 @@ Hello!
         The real treasure is the nature surrounding us! The magical phenomenon of life and rebirth!
         * * * Umm that's cool and all but everyone told me they were looking for something here...
             That's for you to discover for yourself. I can't help you there. 
-            * * * * Return ->lake
+            ->END
 + Goodbye. 
     Bye!
-    ->lake
+    ->END
 
 
 =Coginthemachine
