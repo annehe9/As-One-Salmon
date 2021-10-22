@@ -15,11 +15,11 @@ C:/Users/anneh/OneDrive/Desktop/ExperimentalGame/As-One-Salmon/As One (new contr
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-50892
+53674
 Successfully changed project path to: C:/Users/anneh/OneDrive/Desktop/ExperimentalGame/As-One-Salmon/As One (new control)
 C:/Users/anneh/OneDrive/Desktop/ExperimentalGame/As-One-Salmon/As One (new control)
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 59.75 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 224.28 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.18f1 (a7d1c678663c)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.18f1/Editor/Data/Resources/UnitySubsystems
@@ -35,125 +35,125 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.18f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.18f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.18f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56624
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56952
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.18f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.18f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.18f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002481 seconds.
+Registered in 0.005755 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 99.97 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 101.26 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.520 seconds
+- Completed reload, in  4.035 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1520ms)
-		BeginReloadAssembly (64ms)
+	ReloadAssembly (4035ms)
+		BeginReloadAssembly (285ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (750ms)
-			LoadAssemblies (62ms)
+			CreateAndSetChildDomain (4ms)
+		EndReloadAssembly (1250ms)
+			LoadAssemblies (273ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (197ms)
+			SetupTypeCache (436ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (196ms)
-			SetupLoadedEditorAssemblies (281ms)
+			RebuildScriptCaches (87ms)
+			SetupLoadedEditorAssemblies (523ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (100ms)
-				BeforeProcessingInitializeOnLoad (22ms)
-				ProcessInitializeOnLoadAttributes (125ms)
-				ProcessInitializeOnLoadMethodAttributes (27ms)
+				InitializePlatformSupportModulesInManaged (16ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (101ms)
+				BeforeProcessingInitializeOnLoad (33ms)
+				ProcessInitializeOnLoadAttributes (286ms)
+				ProcessInitializeOnLoadMethodAttributes (85ms)
 				AfterProcessingInitializeOnLoad (0ms)
-				EditorAssembliesLoaded (0ms)
+				EditorAssembliesLoaded (1ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.002375 seconds.
+Registered in 0.011881 seconds.
 Begin MonoManager ReloadAssembly
-Symbol file data-0000014DF55CFF00 doesn't match image C:\Users\anneh\OneDrive\Desktop\ExperimentalGame\As-One-Salmon\As One (new control)\Library\ScriptAssemblies\Assembly-CSharp.dll
+Symbol file data-00000269E2C4BE40 doesn't match image C:\Users\anneh\OneDrive\Desktop\ExperimentalGame\As-One-Salmon\As One (new control)\Library\ScriptAssemblies\Assembly-CSharp.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000014DF2300020 doesn't match image C:\Users\anneh\OneDrive\Desktop\ExperimentalGame\As-One-Salmon\As One (new control)\Library\ScriptAssemblies\Assembly-CSharp-Editor.dll
+Symbol file data-00000269E26DD380 doesn't match image C:\Users\anneh\OneDrive\Desktop\ExperimentalGame\As-One-Salmon\As One (new control)\Library\ScriptAssemblies\Assembly-CSharp-Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000014DF21BC270 doesn't match image C:\Users\anneh\OneDrive\Desktop\ExperimentalGame\As-One-Salmon\As One (new control)\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file data-00000269E549C030 doesn't match image C:\Users\anneh\OneDrive\Desktop\ExperimentalGame\As-One-Salmon\As One (new control)\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000014DF2D07020 doesn't match image C:\Users\anneh\OneDrive\Desktop\ExperimentalGame\As-One-Salmon\As One (new control)\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file data-00000269E2F08140 doesn't match image C:\Users\anneh\OneDrive\Desktop\ExperimentalGame\As-One-Salmon\As One (new control)\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000014DF51E8620 doesn't match image C:\Users\anneh\OneDrive\Desktop\ExperimentalGame\As-One-Salmon\As One (new control)\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file data-00000269E26C5190 doesn't match image C:\Users\anneh\OneDrive\Desktop\ExperimentalGame\As-One-Salmon\As One (new control)\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000014DF5BB8250 doesn't match image C:\Users\anneh\OneDrive\Desktop\ExperimentalGame\As-One-Salmon\As One (new control)\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file data-00000269E2287620 doesn't match image C:\Users\anneh\OneDrive\Desktop\ExperimentalGame\As-One-Salmon\As One (new control)\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000014DF484D020 doesn't match image C:\Users\anneh\OneDrive\Desktop\ExperimentalGame\As-One-Salmon\As One (new control)\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file data-00000269E41F0080 doesn't match image C:\Users\anneh\OneDrive\Desktop\ExperimentalGame\As-One-Salmon\As One (new control)\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000014DF2175B80 doesn't match image C:\Users\anneh\OneDrive\Desktop\ExperimentalGame\As-One-Salmon\As One (new control)\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file data-00000269E2287620 doesn't match image C:\Users\anneh\OneDrive\Desktop\ExperimentalGame\As-One-Salmon\As One (new control)\Library\ScriptAssemblies\Unity.Timeline.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000014DF25926D0 doesn't match image C:\Users\anneh\OneDrive\Desktop\ExperimentalGame\As-One-Salmon\As One (new control)\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file data-00000269E55BA020 doesn't match image C:\Users\anneh\OneDrive\Desktop\ExperimentalGame\As-One-Salmon\As One (new control)\Library\ScriptAssemblies\Unity.TextMeshPro.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000014DF5BB8250 doesn't match image C:\Users\anneh\OneDrive\Desktop\ExperimentalGame\As-One-Salmon\As One (new control)\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file data-00000269E2287620 doesn't match image C:\Users\anneh\OneDrive\Desktop\ExperimentalGame\As-One-Salmon\As One (new control)\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000014DF2175B80 doesn't match image C:\Users\anneh\OneDrive\Desktop\ExperimentalGame\As-One-Salmon\As One (new control)\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file data-00000269E2F08140 doesn't match image C:\Users\anneh\OneDrive\Desktop\ExperimentalGame\As-One-Salmon\As One (new control)\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000014DF2D1C630 doesn't match image C:\Users\anneh\OneDrive\Desktop\ExperimentalGame\As-One-Salmon\As One (new control)\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file data-00000269E2C6B250 doesn't match image C:\Users\anneh\OneDrive\Desktop\ExperimentalGame\As-One-Salmon\As One (new control)\Library\ScriptAssemblies\UnityEditor.UI.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000014DF2ABD010 doesn't match image C:\Users\anneh\OneDrive\Desktop\ExperimentalGame\As-One-Salmon\As One (new control)\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file data-00000269E4519050 doesn't match image C:\Users\anneh\OneDrive\Desktop\ExperimentalGame\As-One-Salmon\As One (new control)\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000014DF25CC570 doesn't match image C:\Users\anneh\OneDrive\Desktop\ExperimentalGame\As-One-Salmon\As One (new control)\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file data-00000269E228F630 doesn't match image C:\Users\anneh\OneDrive\Desktop\ExperimentalGame\As-One-Salmon\As One (new control)\Library\ScriptAssemblies\Unity.Rider.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000014DF2ABD010 doesn't match image C:\Users\anneh\OneDrive\Desktop\ExperimentalGame\As-One-Salmon\As One (new control)\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file data-00000269E420CAA0 doesn't match image C:\Users\anneh\OneDrive\Desktop\ExperimentalGame\As-One-Salmon\As One (new control)\Library\ScriptAssemblies\UnityEngine.UI.dll
 Symbol file LoadedFromMemory is not a mono symbol file
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.35 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.95 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.026 seconds
+- Completed reload, in  3.673 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1027ms)
-		BeginReloadAssembly (137ms)
+	ReloadAssembly (3675ms)
+		BeginReloadAssembly (544ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
+			DisableScriptedObjects (14ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (18ms)
-		EndReloadAssembly (834ms)
-			LoadAssemblies (81ms)
+			CreateAndSetChildDomain (57ms)
+		EndReloadAssembly (2852ms)
+			LoadAssemblies (338ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (260ms)
-			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (65ms)
-			SetupLoadedEditorAssemblies (312ms)
+			SetupTypeCache (1032ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (153ms)
+			SetupLoadedEditorAssemblies (937ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (8ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (50ms)
-				ProcessInitializeOnLoadAttributes (240ms)
-				ProcessInitializeOnLoadMethodAttributes (5ms)
-				AfterProcessingInitializeOnLoad (6ms)
-				EditorAssembliesLoaded (0ms)
+				InitializePlatformSupportModulesInManaged (42ms)
+				SetLoadedEditorAssemblies (3ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (210ms)
+				ProcessInitializeOnLoadAttributes (650ms)
+				ProcessInitializeOnLoadMethodAttributes (13ms)
+				AfterProcessingInitializeOnLoad (18ms)
+				EditorAssembliesLoaded (1ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (10ms)
+			AwakeInstancesAfterBackupRestoration (21ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
-Refreshing native plugins compatible for Editor in 0.33 ms, found 2 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.22 seconds
+Refreshing native plugins compatible for Editor in 1.28 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1577 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 85.9 MB.
 System memory in use after: 86.0 MB.
 
 Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2030.
-Total: 3.635000 ms (FindLiveObjects: 0.181900 ms CreateObjectMapping: 0.046500 ms MarkObjects: 3.305400 ms  DeleteObjects: 0.099600 ms)
+Total: 8.413100 ms (FindLiveObjects: 0.413500 ms CreateObjectMapping: 0.182300 ms MarkObjects: 7.646100 ms  DeleteObjects: 0.166500 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -168,152 +168,88 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/New Terrain 1.asset
-  artifactKey: Guid(ae3e1c8ab4305e14cab49327325d567e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Terrain 1.asset using Guid(ae3e1c8ab4305e14cab49327325d567e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3a8fde42ded36cbc779636bcb03b1e8') in 0.033590 seconds 
-  Import took 0.036466 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000260 seconds.
-  path: Assets/color 2.mat
-  artifactKey: Guid(88cb002eba3f6e64ba502a87a4d7842f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/color 2.mat using Guid(88cb002eba3f6e64ba502a87a4d7842f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4fde8ee0f04668d8bbe4c7f4b9f4fe8e') in 0.085861 seconds 
-  Import took 0.089394 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000283 seconds.
-  path: Assets/salmon.obj
-  artifactKey: Guid(f1f9f80c3fa9a3c4585facb6cb13ae10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/salmon.obj using Guid(f1f9f80c3fa9a3c4585facb6cb13ae10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6404c3061c0eea9f72ab86d59e204fb') in 0.091413 seconds 
-  Import took 0.095013 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000308 seconds.
-  path: Assets/color.mat
-  artifactKey: Guid(81638866eb449814498935c2733c7483) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/color.mat using Guid(81638866eb449814498935c2733c7483) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79b6aeb7bb6ed57ec6f8be4922c6bdc4') in 0.012648 seconds 
-  Import took 0.015225 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000289 seconds.
-  path: Assets/As_One_Map.png
-  artifactKey: Guid(8d0bfc6b6b4209b4cb8522c0f6fa01a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/As_One_Map.png using Guid(8d0bfc6b6b4209b4cb8522c0f6fa01a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61bba3b7e385409d953f2e9d6c322748') in 0.110624 seconds 
-  Import took 0.113558 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 34.696751 seconds.
-  path: Assets/Scenes/fishGame.unity
-  artifactKey: Guid(ec595ea37ccd7234bb5efc0bacdee23c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/fishGame.unity using Guid(ec595ea37ccd7234bb5efc0bacdee23c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a28c0813c3dc6189c0f7f8616452c05c') in 0.007607 seconds 
-  Import took 0.011111 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.012148 seconds.
-  path: Assets/Scenes/fishGame.unity
-  artifactKey: Guid(ec595ea37ccd7234bb5efc0bacdee23c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/fishGame.unity using Guid(ec595ea37ccd7234bb5efc0bacdee23c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a28c0813c3dc6189c0f7f8616452c05c') in 0.002954 seconds 
-  Import took 0.006784 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.687930 seconds.
-  path: Assets/Scenes/SampleScene.unity
-  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SampleScene.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dcc088d1731b590f9572c6f2bab98c6a') in 0.010530 seconds 
-  Import took 0.013653 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 167.389643 seconds.
-  path: Assets/Scenes/fishGame.unity
-  artifactKey: Guid(ec595ea37ccd7234bb5efc0bacdee23c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/fishGame.unity using Guid(ec595ea37ccd7234bb5efc0bacdee23c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '502f3558e1bd4c4915c95ab275bb967c') in 0.002844 seconds 
-  Import took 0.006879 seconds .
+  path: Assets/CameraFollow.cs
+  artifactKey: Guid(af1bdc060d01fb246a9112a9e653b2b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CameraFollow.cs using Guid(af1bdc060d01fb246a9112a9e653b2b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a040c29744364144e0eb1de0b5d01ee7') in 0.095273 seconds 
+  Import took 0.107105 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.002785 seconds.
+Registered in 0.020076 seconds.
 Begin MonoManager ReloadAssembly
-Symbol file data-0000014DF25926D0 doesn't match image C:\Users\anneh\OneDrive\Desktop\ExperimentalGame\As-One-Salmon\As One (new control)\Library\ScriptAssemblies\Assembly-CSharp.dll
+Symbol file data-00000269E488C030 doesn't match image C:\Users\anneh\OneDrive\Desktop\ExperimentalGame\As-One-Salmon\As One (new control)\Library\ScriptAssemblies\Assembly-CSharp.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000014DF2583020 doesn't match image C:\Users\anneh\OneDrive\Desktop\ExperimentalGame\As-One-Salmon\As One (new control)\Library\ScriptAssemblies\Assembly-CSharp-Editor.dll
+Symbol file data-00000269E2E3CEF0 doesn't match image C:\Users\anneh\OneDrive\Desktop\ExperimentalGame\As-One-Salmon\As One (new control)\Library\ScriptAssemblies\Assembly-CSharp-Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000014DF83855D0 doesn't match image C:\Users\anneh\OneDrive\Desktop\ExperimentalGame\As-One-Salmon\As One (new control)\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file data-00000269E28FCCC0 doesn't match image C:\Users\anneh\OneDrive\Desktop\ExperimentalGame\As-One-Salmon\As One (new control)\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000014DF80B2010 doesn't match image C:\Users\anneh\OneDrive\Desktop\ExperimentalGame\As-One-Salmon\As One (new control)\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file data-00000269E2E19010 doesn't match image C:\Users\anneh\OneDrive\Desktop\ExperimentalGame\As-One-Salmon\As One (new control)\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000014DF2424010 doesn't match image C:\Users\anneh\OneDrive\Desktop\ExperimentalGame\As-One-Salmon\As One (new control)\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file data-00000269E507C400 doesn't match image C:\Users\anneh\OneDrive\Desktop\ExperimentalGame\As-One-Salmon\As One (new control)\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000014DF7F0D010 doesn't match image C:\Users\anneh\OneDrive\Desktop\ExperimentalGame\As-One-Salmon\As One (new control)\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file data-00000269E2FC2030 doesn't match image C:\Users\anneh\OneDrive\Desktop\ExperimentalGame\As-One-Salmon\As One (new control)\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000014DF2BA0820 doesn't match image C:\Users\anneh\OneDrive\Desktop\ExperimentalGame\As-One-Salmon\As One (new control)\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file data-00000269E4C24A10 doesn't match image C:\Users\anneh\OneDrive\Desktop\ExperimentalGame\As-One-Salmon\As One (new control)\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000014DF7F0D010 doesn't match image C:\Users\anneh\OneDrive\Desktop\ExperimentalGame\As-One-Salmon\As One (new control)\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file data-00000269E4E8A020 doesn't match image C:\Users\anneh\OneDrive\Desktop\ExperimentalGame\As-One-Salmon\As One (new control)\Library\ScriptAssemblies\Unity.Timeline.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000014DF4DCA010 doesn't match image C:\Users\anneh\OneDrive\Desktop\ExperimentalGame\As-One-Salmon\As One (new control)\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file data-00000269E2C42010 doesn't match image C:\Users\anneh\OneDrive\Desktop\ExperimentalGame\As-One-Salmon\As One (new control)\Library\ScriptAssemblies\Unity.TextMeshPro.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000014DF7F0D010 doesn't match image C:\Users\anneh\OneDrive\Desktop\ExperimentalGame\As-One-Salmon\As One (new control)\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file data-00000269E2FC2030 doesn't match image C:\Users\anneh\OneDrive\Desktop\ExperimentalGame\As-One-Salmon\As One (new control)\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000014DF26B0010 doesn't match image C:\Users\anneh\OneDrive\Desktop\ExperimentalGame\As-One-Salmon\As One (new control)\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file data-00000269E29724E0 doesn't match image C:\Users\anneh\OneDrive\Desktop\ExperimentalGame\As-One-Salmon\As One (new control)\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000014DF2343720 doesn't match image C:\Users\anneh\OneDrive\Desktop\ExperimentalGame\As-One-Salmon\As One (new control)\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file data-00000269E507C400 doesn't match image C:\Users\anneh\OneDrive\Desktop\ExperimentalGame\As-One-Salmon\As One (new control)\Library\ScriptAssemblies\UnityEditor.UI.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000014DF484D020 doesn't match image C:\Users\anneh\OneDrive\Desktop\ExperimentalGame\As-One-Salmon\As One (new control)\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file data-00000269E2829030 doesn't match image C:\Users\anneh\OneDrive\Desktop\ExperimentalGame\As-One-Salmon\As One (new control)\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000014DF81065B0 doesn't match image C:\Users\anneh\OneDrive\Desktop\ExperimentalGame\As-One-Salmon\As One (new control)\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file data-00000269E4733020 doesn't match image C:\Users\anneh\OneDrive\Desktop\ExperimentalGame\As-One-Salmon\As One (new control)\Library\ScriptAssemblies\Unity.Rider.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000014DF2D07020 doesn't match image C:\Users\anneh\OneDrive\Desktop\ExperimentalGame\As-One-Salmon\As One (new control)\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file data-00000269E26CCD70 doesn't match image C:\Users\anneh\OneDrive\Desktop\ExperimentalGame\As-One-Salmon\As One (new control)\Library\ScriptAssemblies\UnityEngine.UI.dll
 Symbol file LoadedFromMemory is not a mono symbol file
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.56 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.76 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.226 seconds
+- Completed reload, in  3.245 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1226ms)
-		BeginReloadAssembly (163ms)
+	ReloadAssembly (3246ms)
+		BeginReloadAssembly (343ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
+			DisableScriptedObjects (21ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (48ms)
-		EndReloadAssembly (984ms)
-			LoadAssemblies (119ms)
+			CreateAndSetChildDomain (122ms)
+		EndReloadAssembly (2648ms)
+			LoadAssemblies (272ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (328ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (44ms)
-			SetupLoadedEditorAssemblies (389ms)
+			SetupTypeCache (1025ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (136ms)
+			SetupLoadedEditorAssemblies (813ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (11ms)
+				InitializePlatformSupportModulesInManaged (19ms)
 				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (92ms)
-				ProcessInitializeOnLoadAttributes (275ms)
-				ProcessInitializeOnLoadMethodAttributes (4ms)
-				AfterProcessingInitializeOnLoad (5ms)
-				EditorAssembliesLoaded (0ms)
+				BeforeProcessingInitializeOnLoad (149ms)
+				ProcessInitializeOnLoadAttributes (616ms)
+				ProcessInitializeOnLoadMethodAttributes (10ms)
+				AfterProcessingInitializeOnLoad (16ms)
+				EditorAssembliesLoaded (1ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (8ms)
+			AwakeInstancesAfterBackupRestoration (36ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.44 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 1.69 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1558 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 87.9 MB.
-System memory in use after: 88.1 MB.
+System memory in use before: 84.5 MB.
+System memory in use after: 84.6 MB.
 
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2077.
-Total: 3.463400 ms (FindLiveObjects: 0.222300 ms CreateObjectMapping: 0.073600 ms MarkObjects: 3.145000 ms  DeleteObjects: 0.021100 ms)
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2032.
+Total: 4.852100 ms (FindLiveObjects: 0.253600 ms CreateObjectMapping: 0.095200 ms MarkObjects: 4.468800 ms  DeleteObjects: 0.032800 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
