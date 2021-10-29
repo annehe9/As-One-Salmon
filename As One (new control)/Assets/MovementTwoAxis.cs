@@ -31,6 +31,7 @@ public class MovementTwoAxis : MonoBehaviour
             float thrust = Input.GetAxis("Vertical");
 
             float turn = Input.GetAxis("Horizontal");
+            print(turn + " " + torque);
             rb.AddTorque(transform.up * torque * turn);
             rb.AddForce(transform.forward * thrust * moveSpeed);
             
