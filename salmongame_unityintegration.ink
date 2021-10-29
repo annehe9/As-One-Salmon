@@ -296,8 +296,8 @@ do you think they can see us? haha sorry, that was random. I've just been thinki
 - it's been my life's dream
 * what's a baker
     They don't seem to hear you. You are left to imagine what this mystical bakery is.
-    It sounds nice, though. You hope you get to experience it one day.
-    ->END
+    -It sounds nice, though. You hope you get to experience it one day.
+->END
     
 === salmon12dialogue === 
 ~ talked_to += 1
