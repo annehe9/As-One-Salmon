@@ -5,7 +5,6 @@ using UnityEngine;
 public class PlayerContoller : MonoBehaviour
 {
     public Animator anim;
-
   
     // Update is called once per frame
     void Update()

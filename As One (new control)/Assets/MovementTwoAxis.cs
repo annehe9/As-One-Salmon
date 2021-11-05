@@ -9,17 +9,20 @@ public class MovementTwoAxis : MonoBehaviour
     public float moveSpeed = 5f;
     public bool frozen = false;
     public float torque = 5.0f;
+    public Animator anim;
 
     // Start is called before the first frame update
     void Start()
     {
         //cache the rigidbody on this game object
         rb = gameObject.GetComponent<Rigidbody>();
+        anim = gameObject.GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        anim.SetBool("talking", frozen);
     }
 
     //I put the physics update here - fixed framerate = consistent
