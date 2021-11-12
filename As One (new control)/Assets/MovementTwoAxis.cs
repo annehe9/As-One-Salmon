@@ -22,7 +22,7 @@ public class MovementTwoAxis : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        anim.SetBool("talking", frozen);
+
     }
 
     //I put the physics update here - fixed framerate = consistent

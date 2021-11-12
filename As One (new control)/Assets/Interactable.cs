@@ -14,6 +14,7 @@ public class Interactable : MonoBehaviour
     [Tooltip("The player. It must have a collider to trigger events. If blank assumes an object named \"Player\"")]
     public GameObject player;
     public DialogueManager manager;
+    public Animator anim;
 
     [Tooltip("Set to true if you want the interaction to be possible regardless of the player direction")]
     public bool areaOnly = false;
@@ -57,6 +58,8 @@ public class Interactable : MonoBehaviour
         {
             audioSource = gameObject.GetComponent<AudioSource>();
         }
+
+        anim = gameObject.GetComponent<Animator>();
 
     }
 
@@ -121,5 +124,14 @@ public class Interactable : MonoBehaviour
        
     }
 
+    public void Animate()
+    {
+        anim.SetBool("talking", true);
+    }
+
+    public void StopAnimate()
+    {
+        anim.SetBool("talking", false);
+    }
 
 }

@@ -6,6 +6,7 @@ using TMPro;
 using System.Collections;
 using RedBlueGames.Tools.TextTyper;
 using UnityEngine.EventSystems;
+using System.Collections.Generic;
 /*
  This script works with Interactable.cs and integrates ink, 
  text mesh pro UI, a character avatar and a script for text effects
@@ -63,6 +64,10 @@ public class DialogueManager : MonoBehaviour
     [SerializeField]
     private TextAsset inkJSONAsset = null;
     public Story story;
+
+    //keep track of choices so can select with keyboard
+    public List<Button> choice_buttons;
+    private int current_button;
 
     
     void Awake()
@@ -139,7 +144,7 @@ public class DialogueManager : MonoBehaviour
     {
 
         //action/click - go to settings > input to configure what "Fire1" is
-        if (Input.GetButtonDown("Fire1"))
+        if (Input.GetKeyDown("return"))
         {
             //if typing skip - justPressedUI is an inelegant way to avoid registering a choice event 
             //that just happened as a skip action
@@ -171,7 +176,26 @@ public class DialogueManager : MonoBehaviour
 
             }
 
+        }
 
+        if (dialogueState == CHOICE_DISPLAYED) {
+            if (Input.GetKeyDown("w") || Input.GetKeyDown(KeyCode.UpArrow))
+            {
+                current_button -= 1;
+                if (current_button < 0)
+                {
+                    current_button = choice_buttons.Count - 1;
+                }
+            }
+            if (Input.GetKeyDown("s") || Input.GetKeyDown(KeyCode.DownArrow))
+            {
+                current_button += 1;
+                if (current_button > choice_buttons.Count-1)
+                {
+                    current_button = 0;
+                }
+            }
+            EventSystem.current.SetSelectedGameObject(choice_buttons[current_button].gameObject);
         }
 
         justPressedUI = false;
@@ -185,6 +209,7 @@ public class DialogueManager : MonoBehaviour
         
         //set the story at the knot
         story.ChoosePathString(id);
+        currentInteractable.SendMessage("Animate");
 
         ContinueDialogue();
     }
@@ -264,6 +289,7 @@ public class DialogueManager : MonoBehaviour
 
         //freeze the controller by sending a message so I don't have to know the specific class
         player.SendMessage("UnFreeze");
+        currentInteractable.SendMessage("StopAnimate");
     }
 
     // When we click the choice button, tell the story to choose that choice!
@@ -303,8 +329,6 @@ public class DialogueManager : MonoBehaviour
 
         //clear selected ui element (unity UI quirk)
         EventSystem.current.SetSelectedGameObject(null);
-
-        dialogueState = CHOICE_DISPLAYED;
         
         if (story.currentChoices.Count > 0)
         {
@@ -320,14 +344,18 @@ public class DialogueManager : MonoBehaviour
                     OnClickChoiceButton(choice);
                 });
 
+                choice_buttons.Add(button);
+
                 //select the first button
                 if (i == 0)
                 {
-                    
-                    EventSystem.current.SetSelectedGameObject(button.gameObject);
+                    current_button = 0;
+                    //EventSystem.current.SetSelectedGameObject(button.gameObject);
                 }
             }
         }
+
+        dialogueState = CHOICE_DISPLAYED;
 
         if (confirmImage != null)
             confirmImage.enabled = false;
@@ -398,6 +426,7 @@ public class DialogueManager : MonoBehaviour
         {
             GameObject.Destroy(choicesContainer.GetChild(i).gameObject);
         }
+        choice_buttons.Clear();
     }
 
     //call
