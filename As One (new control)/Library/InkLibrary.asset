@@ -16,7 +16,7 @@ MonoBehaviour:
   - compileAutomatically: 0
     inkAsset: {fileID: 102900000, guid: cd32a4591bfe6a14592c520b4f92d499, type: 3}
     jsonAssetDirectory: {fileID: 0}
-    jsonAsset: {fileID: 0}
+    jsonAsset: {fileID: 4900000, guid: bd24f357dea3cb741a63d491f28e4256, type: 3}
     unhandledCompileErrors: []
     errors: []
     warnings: []
