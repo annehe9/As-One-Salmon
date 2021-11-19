@@ -45,6 +45,20 @@ VAR talked_to = 0
 {Squawk! The seagull swipes at you, nearly missing. Scary. | Scram, kid.} 
 ->END
 
+=== out_of_bounds ===
+- You feel like you should not be going this way.
+- You think you should be going north, and maybe west.
+* How do you know this
+- Fish instinct.
+->END
+
+=== out_of_bounds2 ===
+- You ought to turn back now. There is nothing out here.
+->END
+
+=== out_of_bounds3 ===
+- Are you sure you want to leave? You cannot undo this decision.
+->END
 
 === north ===
 * Talk to fish.
