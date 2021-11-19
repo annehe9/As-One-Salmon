@@ -86,6 +86,77 @@ VAR talked_to = 0
 + {refused_to_follow} No one is here.
     ->END
 
+=== where_is_stuff ===
+* I'm new here, how do I get to the river? 
+    Swim northeast! If you follow the shoreline you'll find your way to the estuary, which leads to the river.
+    + + What else is around here?
+        Hmm, there is some coral ahead, anda kelp forest to the east.
+        ->END
+    + + Goodbye
+        See you at the estuary!
+        ->END
++ What else is around here?
+    Hmm, there is some coral ahead, and a kelp forest to the east.
+    ->END
++ Goodbye
+    See you at the river!
+    ->END
+    
+=== startingfish1 ===
+- This is my first time returning here. A lot has changed!
+->END
+
+=== startingfish2 ===
+There's so much to see out here!
+->END
+
+=== startingfish3 ===
+Hurry up! We have to go!
+->END
+
+=== startingfish4 ===
+The ocean is so big!
+->END
+
+=== startingfish5 ===
+Hello there! Are you headed to the estuary?
++ Yes
+    Me too! :)
+    ->END
++ No
+    Okay...but just so you know, all of the other salmon are going there right now.
+    ->END
+    
+=== startingfish6 ===
+The landscapes are so cool! They're like, above the water!
++ damn that's crazy
+    I know, right??
+    ->END
+
+=== startingfish7 ===
+It's great to be a salmon!
+->END
+
+=== startingfish8 ===
+Did you know that salmon undergo a transformation when they enter freshwater?
+->END
+
+=== startingfish9 ===
+{The waves crashing on the shore are mesmerizing...|They are too engrossed in watching the waves to talk.}
+->END
+
+=== startingfish10 ===
+I don't know why I came here but I just woke up today and found myself here...
+->END
+
+=== startingfish11 ===
+Look at this beautiful view!
+->END
+
+=== starting12 ===
+Sometimes I like to stop and look at the flowers.
+->END
+
 === east ===
 ~ talked_to += 1
 You see a coral reef, waving at you with their long round body. 
