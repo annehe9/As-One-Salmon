@@ -33,7 +33,9 @@ VAR talked_to = 0
 * [that it was a lively place] You remember that it was a lively place. 
                                 The area was full of life. You played in the stream, and there was so much to explore.
                                 You enjoyed being with everyone. But since then, you have all been separated.
-* [that it was a peaceful place] You remember it being a peaceful place. You lived without fear of predators. You lived blissfully with the other fish, and every day was full of happiness. But you haven't experienced that since then.
+* [that it was a peaceful place] You remember it being a peaceful place. 
+                                You lived without fear of predators. You lived blissfully with the other fish, and every day was full of happiness.
+                                But you haven't experienced that since then.
 * [that is was a terrible place] You don't like to think about it.
 -
 * Think about the future
@@ -251,7 +253,7 @@ We're on our way!
 ->END
 
 === startingfish34 ===
-I'm so excited and hashtag blessed for this opportunity. I'd like to thank my mentors, my supervisor,  my bus driver, my...
+I'm so excited and \#blessed for this opportunity. I'd like to thank my mentors, my supervisor,  my bus driver, my...
 + You leave them be.
     They continue rambling.
     ->END
@@ -339,17 +341,20 @@ Great! I love new friends!
          ->END
 + + You want to ask them another question. 
     Have you ever been there? You know, the estuary? 
-    Oh boy, I have not, and I find it interesting that I have been here forever, but I have never met any salmon heading back from the estuary...
-    + + + I wonder why that's the case.. Did they decide to stay there forever because of how beautiful it is? 
-        I do not know my friend, but I hope that is the case. I hope the best for you. 
+    Oh boy, I have not. I cannot move from my home here, you see.
+    Though, I find it interesting that I have been here forever, but I have never met any salmon heading back from the estuary...
+    + + + [I wonder why that's the case...]
+        I wonder why that's the case. Did they decide to stay there forever because of how beautiful it is? 
+        I do not know my friend, but I hope that is true. I hope the best for you. 
         ->END 
 +   No 
     Well, welcome back. Isn't this place mesmerizing? 
     + + Yes, and I want to know more about the estuary.
         I would love to tell you more about it, but I just have never heard anything from any salmon who actually went there and came back. I'm so sorry. 
         ->END
-    + + Yes, and I am just here to listen to you rambling on life. 
-        Somedays I doubt if I will be happier if I can swim. You know, us coral reefs live long long lives, between 5,000 and 10,000 years old. We see the same views everyday. But I know for a fact that just by being here, I'm helping the lives of other sea plants, and that makes my life meaningful. I don't have to have a impressive destination to get to. I am comfortable being where I am because that is what I want. 
+    + + Yes, and I am just here to listen to you ramble on life. 
+        Somedays I doubt if I will be happier if I can swim. 
+        You know, us coral reefs live long long lives, between 5,000 and 10,000 years old. We see the same views everyday. But I know for a fact that just by being here, I'm helping the lives of other sea plants, and that makes my life meaningful. I don't have to have a impressive destination to get to. I am comfortable being where I am because that is what I want. 
         + + + That's wonderful to hear. But you know, some of us just gotta go to places...
             But is that what you actually want? For yourself?
             + + + + I don't know... That was a lovely talk... But I have to head back now.
