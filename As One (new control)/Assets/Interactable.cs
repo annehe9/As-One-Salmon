@@ -126,12 +126,12 @@ public class Interactable : MonoBehaviour
 
     public void Animate()
     {
-        anim.SetBool("talking", true);
+        if (anim != null) anim.SetBool("talking", true);
     }
 
     public void StopAnimate()
     {
-        anim.SetBool("talking", false);
+        if (anim != null) anim.SetBool("talking", false);
     }
 
 }

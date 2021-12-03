@@ -177,6 +177,7 @@ public class DialogueManager : MonoBehaviour
             }
 
         }
+        justPressedUI = false;
 
         if (dialogueState == CHOICE_DISPLAYED) {
             if (Input.GetKeyDown("w") || Input.GetKeyDown(KeyCode.UpArrow))
@@ -197,8 +198,6 @@ public class DialogueManager : MonoBehaviour
             }
             EventSystem.current.SetSelectedGameObject(choice_buttons[current_button].gameObject);
         }
-
-        justPressedUI = false;
     }
 
     void StartDialogue(string id)

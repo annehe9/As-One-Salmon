@@ -6,7 +6,7 @@ VAR talked_to = 0
 //this is where the game begins if you don't end your last game at the top of the stream
 == begin_narration ===
 - every year, thousands of salmon swim upstream in what is known as a salmon run.
-* [Continue]
++ [Continue]
 
 - this time, you heed the call of the waters.
 ->END
@@ -20,7 +20,7 @@ VAR talked_to = 0
     -> what_will_you_find
 * [riches?]
     -> what_will_you_find
-* -> continue_narration
++ -> continue_narration
     
 === continue_narration ===
 - you don't know, because you are a fish.
@@ -28,9 +28,11 @@ VAR talked_to = 0
 
 === more_narration ===
 - Most salmon return to the river in which they spawned.
-* Try to remember
++ Try to remember
 - you remember...
-* [that it was a lively place] You remember that it was a lively place. The area was full of life. You played in the stream, and there was so much to explore. You enjoyed being with everyone. But since then, you have all been separated.
+* [that it was a lively place] You remember that it was a lively place. 
+                                The area was full of life. You played in the stream, and there was so much to explore.
+                                You enjoyed being with everyone. But since then, you have all been separated.
 * [that it was a peaceful place] You remember it being a peaceful place. You lived without fear of predators. You lived blissfully with the other fish, and every day was full of happiness. But you haven't experienced that since then.
 * [that is was a terrible place] You don't like to think about it.
 -
@@ -87,7 +89,7 @@ VAR talked_to = 0
     ->END
 
 === where_is_stuff ===
-* I'm new here, how do I get to the river? 
++ I'm new here, how do I get to the river? 
     Swim northeast! If you follow the shoreline you'll find your way to the estuary, which leads to the river.
     + + What else is around here?
         Hmm, there is some coral ahead, anda kelp forest to the east.
@@ -153,9 +155,175 @@ I don't know why I came here but I just woke up today and found myself here...
 Look at this beautiful view!
 ->END
 
-=== starting12 ===
+=== startingfish12 ===
 Sometimes I like to stop and look at the flowers.
 ->END
+
+=== startingfish13 ===
+I saw some cool coral just up ahead.
+->END
+
+=== startingfish14 ===
+Did you know that the coral is thousands of years old? I wonder what they have to say...
+->END
+
+=== startingfish15 ===
+Swimming backwards feels weird. It feels disorienting.
+->END
+
+=== startingfish16 ===
+I am going to visit the kelp forest!
+->END
+
+=== startingfish17 ===
+There are so many interesting creatures in this world.
+->END
+
+=== startingfish18 ===
+Does the existence of seahorses imply that there are...
+land horses??
+->END
+
+=== startingfish19 ===
+I think I've seen enough. I'm going to the estuary now.
++ Where is it?
+    Keep going east. You can't miss it.
+    ->END
+    
+=== startingfish20 ===
+this is some blue ass water
+->END
+
+=== startingfish21 ===
+The ocean is so vast...
+->END
+
+=== startingfish22 ===
+It's so easy to get lost here.
+All I know is the estuary is in the northeast.
+->END
+
+=== startingfish23 ===
+I see you've found this tiny island too.
+I like to hang out here and get away from the hustle and bustle of the estuary.
+Sometimes it's nice to just swim around and take it all in.
+->END
+
+=== startingfish24 ===
+Sometimes it feels like I'm the only one out here...
+->END
+
+=== startingfish25 ===
+this is some green ass grass
+->END
+
+=== startingfish26 ===
+We are close to the river, I can feel it.
+->END
+
+=== startingfish27 ===
+swim swim swim swim
+->END
+
+=== startingfish28 ===
+I swam down this little path but it turned out to be a dead end...
+Maybe I should just follow the other fish next time.
+->END
+
+=== startingfish29 ===
+Oh, which way to go?
+->END
+
+=== startingfish30 ===
+I love finding new islands!
+->END
+
+=== startingfish31 ===
+I am studying the biology of the land!
+->END
+
+=== startingfish32 ===
+The estuary is just up ahead!
+->END
+
+=== startingfish33 ===
+We're on our way!
+->END
+
+=== startingfish34 ===
+I'm so excited and hashtag blessed for this opportunity. I'd like to thank my mentors, my supervisor,  my bus driver, my...
++ You leave them be.
+    They continue rambling.
+    ->END
+    
+=== startingfish35 ===
+Do you have a moment to learn about blockchain?
++ No.
+    ->END
++ No thanks.
+    ->END
++ Pleaes leave me alone.
+    ->END
+
+=== startingfish36 ===
+Wow, I'm going to learn so much from this experience!
+->END
+
+=== startingfish37 ===
+It's been a while since I've seen so many salmon in one place!
+->END
+
+=== startingfish38 ===
+It's nice to be a part of something.
+->END
+
+=== startingfish39 ===
+There are so many salmon to meet. I wonder if any of them are my soulmate.
+->END
+
+=== startingfish40 ===
+Yeah, we're taking the path less traveled!
+->END
+
+=== startingfish41 ===
+Yeah, yeah!
+->END
+
+=== startingfish42 ===
+There are so many different paths, but we all end up going to the same place.
+->END
+
+=== startingfish43 ===
+Swimming is the best!!
+->END
+
+=== startingfish44 ===
+We may all look the same, but we all have something different to say.
+->END
+
+=== startingfish45 ===
+You ever think about things?
++ Yes
+    Well, I don't think EVER
+    ->END
++ My head is empty
+    That's the way to live. No thoughts, just carefree.
+    ->END
+    
+=== startingfish46 ===
+It's cool to work towards a goal, you know?
+->END
+
+=== startingfish47 ===
+How many different kinds of trees do you think exist?
+->END
+
+=== startingfish48 ===
+I'm glad to have a purpose.
++ What do you mean?
+    Being part of this whole ecosystem, I mean, it's amazing!
+    ->END
+
 
 === east ===
 ~ talked_to += 1
