@@ -536,9 +536,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 680ef21b7c799fe44b2f23a77c3e752b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteRenderer: {fileID: 0}
+  spriteRenderer: {fileID: 317371349}
   defaultSprite: {fileID: 21300000, guid: 90cb72547c957f845bd9c8ab911e7354, type: 3}
   selectedSprite: {fileID: 21300000, guid: 1b64451ca7f5d344e8daedee9da36d8a, type: 3}
+  sceneToLoad: Start menu 1
 --- !u!1 &331001100
 GameObject:
   m_ObjectHideFlags: 0
@@ -835,9 +836,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 680ef21b7c799fe44b2f23a77c3e752b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteRenderer: {fileID: 0}
+  spriteRenderer: {fileID: 430963929}
   defaultSprite: {fileID: 21300000, guid: 989d2254852ffec4dbdcc1a2791c38a3, type: 3}
   selectedSprite: {fileID: 21300000, guid: cbb24cac5fb935042b90e1b4a5c162a1, type: 3}
+  sceneToLoad: fishGame
 --- !u!1001 &815657020
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1830,9 +1832,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 680ef21b7c799fe44b2f23a77c3e752b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteRenderer: {fileID: 0}
+  spriteRenderer: {fileID: 1345178119}
   defaultSprite: {fileID: 21300000, guid: 639846c19e107ac468918fbc5959d510, type: 3}
   selectedSprite: {fileID: 21300000, guid: 3c7a1d6cca0f2a1409cc4ae45c9e1e39, type: 3}
+  sceneToLoad: 
 --- !u!95 &1354192286 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: -3269381649924382886, guid: b00a4697c009be444b72f49b2f50137d, type: 3}
