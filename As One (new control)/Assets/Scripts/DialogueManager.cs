@@ -166,7 +166,10 @@ public class DialogueManager : MonoBehaviour
                 if (story.KnotContainerWithName(currentInteractable.id) != null)
                 {
                     //start dialogue
-                    StartDialogue(currentInteractable.id);
+                    if (currentInteractable) { 
+                        StartDialogue(currentInteractable.id);
+                    }
+                    
                 }
                 else
                 {
