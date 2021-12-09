@@ -70,6 +70,7 @@ MonoBehaviour:
   moveSpeed: 50
   frozen: 0
   torque: 4
+  anim: {fileID: 0}
 --- !u!33 &679062775802552331
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -117,7 +118,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 679062775802552328}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ef9c4e6d08c336044a28897521f8c5fc, type: 3}
   m_Name: 
