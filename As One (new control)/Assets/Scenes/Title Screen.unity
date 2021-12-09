@@ -437,6 +437,7 @@ GameObject:
   - component: {fileID: 317371350}
   - component: {fileID: 317371349}
   - component: {fileID: 317371348}
+  - component: {fileID: 317371351}
   m_Layer: 0
   m_Name: Menu-Button
   m_TagString: Untagged
@@ -523,6 +524,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &317371351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 317371347}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 680ef21b7c799fe44b2f23a77c3e752b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteRenderer: {fileID: 0}
+  defaultSprite: {fileID: 21300000, guid: 90cb72547c957f845bd9c8ab911e7354, type: 3}
+  selectedSprite: {fileID: 21300000, guid: 1b64451ca7f5d344e8daedee9da36d8a, type: 3}
 --- !u!1 &331001100
 GameObject:
   m_ObjectHideFlags: 0
@@ -720,6 +736,7 @@ GameObject:
   - component: {fileID: 430963930}
   - component: {fileID: 430963929}
   - component: {fileID: 430963928}
+  - component: {fileID: 430963931}
   m_Layer: 0
   m_Name: Play-
   m_TagString: Untagged
@@ -806,6 +823,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &430963931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 430963927}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 680ef21b7c799fe44b2f23a77c3e752b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteRenderer: {fileID: 0}
+  defaultSprite: {fileID: 21300000, guid: 989d2254852ffec4dbdcc1a2791c38a3, type: 3}
+  selectedSprite: {fileID: 21300000, guid: cbb24cac5fb935042b90e1b4a5c162a1, type: 3}
 --- !u!1001 &815657020
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1699,6 +1731,7 @@ GameObject:
   - component: {fileID: 1345178120}
   - component: {fileID: 1345178119}
   - component: {fileID: 1345178118}
+  - component: {fileID: 1345178121}
   m_Layer: 0
   m_Name: Quit
   m_TagString: Untagged
@@ -1785,6 +1818,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &1345178121
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1345178117}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 680ef21b7c799fe44b2f23a77c3e752b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteRenderer: {fileID: 0}
+  defaultSprite: {fileID: 21300000, guid: 639846c19e107ac468918fbc5959d510, type: 3}
+  selectedSprite: {fileID: 21300000, guid: 3c7a1d6cca0f2a1409cc4ae45c9e1e39, type: 3}
 --- !u!95 &1354192286 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: -3269381649924382886, guid: b00a4697c009be444b72f49b2f50137d, type: 3}
