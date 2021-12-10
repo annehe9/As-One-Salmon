@@ -226,12 +226,11 @@ swim swim swim swim
 ->END
 
 === startingfish28 ===
-I swam down this little path but it turned out to be a dead end...
-Maybe I should just follow the other fish next time.
+I feel like I'm the main character of my own story!
 ->END
 
 === startingfish29 ===
-Oh, which way to go?
+Oh, there are so many things I want to do upstream!
 ->END
 
 === startingfish30 ===
@@ -251,13 +250,11 @@ We're on our way!
 ->END
 
 === startingfish34 ===
-I'm so excited and \#blessed for this opportunity. I'd like to thank my mentors, my supervisor,  my bus driver, my...
-+ You leave them be.
-    They continue rambling.
-    ->END
+Who knows what surprises lie ahead?
+->END
     
 === startingfish35 ===
-When I don't know what to do, I just keep moving forward.
+When I don't know what to do, I just keep pushing forward.
 ->END
 
 === startingfish36 ===
@@ -285,7 +282,7 @@ Yeah, yeah!
 ->END
 
 === startingfish42 ===
-There are so many different paths, but we all end up going to the same place.
+We come from so many different paths and walks of life, but we all end up going to the same place. Isn't that neat?
 ->END
 
 === startingfish43 ===
@@ -299,7 +296,8 @@ We may all look the same, but we all have something different to say.
 === startingfish45 ===
 You ever think about things?
 + Yes
-    Well, I don't think EVER
+    Well, I DONT. 
+    What is there to think about? Swim, eat, sleep. That's all I need.
     ->END
 + My head is empty
     That's the way to live. No thoughts, just carefree.
@@ -307,6 +305,8 @@ You ever think about things?
     
 === startingfish46 ===
 It's cool to work towards a goal, you know?
+Doesn't matter how big or small it is.
+As long as it means something to you.
 ->END
 
 === startingfish47 ===
@@ -317,6 +317,7 @@ How many different kinds of trees do you think exist?
 I'm glad to have a purpose.
 + What do you mean?
     Being part of this whole ecosystem, I mean, it's amazing!
+    It really feels like I'm making a difference.
     ->END
 
 
@@ -343,18 +344,23 @@ Great! I love new friends!
 +   No 
     Well, welcome back. Isn't this place mesmerizing? 
     + + Yes, and I want to know more about the estuary.
-        I would love to tell you more about it, but I just have never heard anything from any salmon who actually went there and came back. I'm so sorry. 
+        I would love to tell you more about it, but 
+        I just have never heard anything from any salmon who actually went there and came back. 
+        I'm so sorry. 
         ->END
     + + Yes, and I am just here to listen to you ramble on life. 
         Somedays I doubt if I will be happier if I can swim. 
-        You know, us coral reefs live long long lives, between 5,000 and 10,000 years old. We see the same views everyday. But I know for a fact that just by being here, I'm helping the lives of other sea plants, and that makes my life meaningful. I don't have to have a impressive destination to get to. I am comfortable being where I am because that is what I want. 
-        + + + That's wonderful to hear. But you know, some of us just gotta go to places...
+        You know, us coral reefs live long long lives, between 5,000 and 10,000 years old. 
+        We see the same views everyday. 
+        But I know for a fact that just by being here, I'm helping the lives of other sea plants, and that makes my life meaningful. 
+        I don't have to have a impressive destination to get to. I am comfortable being where I am because that is what I want. 
+        + + + [Ok but...] That's wonderful to hear. But you know, some of us just gotta go to places...
             But is that what you actually want? For yourself?
-            + + + + I don't know... That was a lovely talk... But I have to head back now.
+            + + + + [I don't know...] I don't know... That was a lovely talk... But I have to head back now.
                     ->END
-            + + + + Yes, I'm sure. 
+            + + + + [Yes, I'm sure.] I've known this my whole life. Of course I'm sure of it. I don't know why I'm being so anxious. 
                     ->END
-         + + +  That's intersting to hear. Sometimes I think about if I actually want to go to the estuary...
+         + + +  That's interesting to hear. Makes you think...
             ->END
 
 === west === 
@@ -370,25 +376,31 @@ You come across a pair of sea horses.
        I wish I had a relationship like that... I've always had commitment issues.
        Oh no, that's terrible. As seahorses, once we find the one, we mate for life.
        We wish you that someday you will find your one and only love too. 
-       Thank you. I think that will happen once I get there, you know, the upstream place. It was so nice to meet you both. Bye!
+       Thank you. I think that will happen once I get there, you know, the upstream place. 
+       It was so nice to meet you both. Bye!
         ->END
            
            
     ++ Right... Sorry it's been a while, my memory is a little foggy. 
        No worries. It's nice seeing you again. Are you still on that journey to the upstream? 
-       +++ Yes, I am determined to overcome all challenges and swim upstream. 
+       +++ [Yes] Yes, I am determined to overcome all challenges and swim upstream. 
            Well, good luck to you! We will miss you. 
            Thank you. 
            ->END
-       +++ Yes... but no. I'm having some doubts...
+       +++ [I guess...] Yes... but no. I'm having some doubts...
            Oh, how's so? Do you want to talk about it? 
-           ++++ Yes. I'm doubting about the purpose of swimming upstream. 
-                I'm not sure why I am doing that, or who will I be with when I'm there. They say that it is the place to go, it is the place where I will find my love, but will I? Or is that "love" worth it? 
-                That is totally understandable. To be very honest, we are not sure what to tell you. We've never heard from anyone who actually went upstream...but we do see the kids come back.
-                +++++ That is so strange. I'm feeling a bit pessimistic... 
-                      I am worried now. Is swimming upstream actually going to make me happy? Is the magical place up there my ultimate goal in life? 
+           ++++ [Yes]Yeah... I'm doubting about the purpose of swimming upstream, to be honest. 
+                I'm not sure why I am doing that, or who will I be with when I'm there. 
+                They say that it is the place to go, it is the place where I will find my love, but will I? 
+                Or is that "love" worth it? 
+                That is totally understandable. To be very honest, we are not sure what to tell you. 
+                We've never heard from anyone who actually went upstream... we've only seen the kids come back.
+                However, I think that if nothing else, love is worth it. Right, honey?
+                Of course, baby. Love is so beautiful, we really hope you get to experience it.
+                +++++ [Okay...] What did they just say? I'm so confused 
+                      I don't know what to make of this...is it really all it's cracked up to be?
                       ->END
-                +++++ Maybe they are so happy with their life so that they decided to stay there. Right? 
+                +++++ [I'm hopeful.] Maybe they are so happy with their life so that they decided to stay there. Right? 
                     I do hope so.
                     ++++++ I agree. It was so nice catching up with you, but I have to go now. Take care!
                          ->END
@@ -396,15 +408,17 @@ You come across a pair of sea horses.
                 ->END 
            
 + Ask how they are doing today
-    Brad is feeling a bit under the weather as bearing the young is not an easy task. 
-    ++ Oh congratulations! I didn't know that. Wait... Brad is bearing the baby? 
-       Yes! Guess you didn't study the top ten unique animal facts.. ha ha. The male seahorses are the ones that carries and give birth to baby seahorses. It gives the female seahorses more time to prepare more eggs so the seahorse specie can thrive!
-       +++ That is impressive! For salmon, it's the ordinary way. But, one thing I've always wondered about is what are the responsibilities for a male salmon when their partner is bearing the baby salmon. It is so strange that I've never heard about the story from anyone...
-       Same for us. We've never heard from anyone, or seen anyone who came back. 
-           ++++ Interesting... I will ask around more. 
-               ->END 
-       
-
+    Brad is feeling a bit under the weather... Bearing the young is not an easy task.
+    Oh congratulations! I didn't know that. Wait... Brad is bearing the baby? 
+    Yes! Guess you didn't study the top ten unique animal facts.. ha ha. 
+    The male seahorses are the ones that carries and give birth to baby seahorses. 
+    It gives the female seahorses more time to prepare more eggs so the seahorse specie can thrive!
+    Wow, I'm impressed! For salmon, it's the ordinary way, I suppose. 
+    But, one thing I've always wondered about is the responsibilities for a male salmon when their partner is bearing the baby salmon. 
+    It is so strange that I've never heard about the story from anyone...
+    Same for us. We've never heard about it either. Do let us know if you find out. 
+    Interesting... I will ask around more. 
+    ->END 
 
 === south ===
 You swim to the south but something feels wrong. The water is dark and rapid. You feel that you are going the wrong way. In the depths, you catch glimpses of shifting shadows and unblinking eyes.
