@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class PauseButtons : MonoBehaviour
 {
+    public Animator anim;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -18,10 +20,19 @@ public class PauseButtons : MonoBehaviour
     }
 
     public void returnToStart() {
-        SceneManager.LoadScene("Title Screen");
+        StartCoroutine(DelayLoadLevel("Title Screen"));
+        //anim.SetTrigger("Start");
+        //SceneManager.LoadScene("Title Screen");
     }
 
     public void quit() {
         Application.Quit();
+    }
+
+    IEnumerator DelayLoadLevel(string lvl)
+    {
+        anim.SetTrigger("Start");
+        yield return new WaitForSeconds(1.0f);
+        SceneManager.LoadScene(lvl);
     }
 }

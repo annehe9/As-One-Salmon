@@ -837,29 +837,28 @@ You get to swim into a small area along the edge of the cliff and look at the sc
 //+ [Continue] -> journeyupstream
     
 === branching ===
-- You notice a fork in the river. Your instincts scream that this is the wrong way. Do you take it?
-+ Take it
-    You take it anyway.
-    You wonder if you've made the right choice.
-    * *Yes, I made this decision for myself. ->cont
-    * *No, I made this decision impulsively. ->cont
-+ Do not
-    You do not take the path, feeling a bit relieved.
-    ->END
+You notice a fork in the river. Your instincts scream that this is the wrong way. 
+Do you take it?
+->END
 
-=cont
- - Either way, you are not turning back.
- - You swim down the winding path, observing nature all around you.
- - It's quiet out here, without the rest of the salmon.
- - The tree leaves fall and create ripples. Bugs skitter across the surface of the water. You've never seen something like this before.
- - At night, you lie in the river, staring up at the sky.
- - You feel the strength draining from your bones. You know that you don't have much time left.
- - You reflect on your journey. Flashbacks to the scenes of your journey.
- - What a great adventure.
- * ...
-    You drift in the current as the camera zooms out.
-    * * ...
-        You can't help but wonder what was at the top of the stream. ->END
+=== altend ===
+You wonder if you've made the right choice. 
++ Yes, I made this decision for myself. ->cont
++ No, I made this decision impulsively. ->cont
+
+=== cont ===
+Either way, you are not turning back.
+You swim down the winding path, observing nature all around you.
+It's quiet out here, without the rest of the salmon.
+The tree leaves fall and create ripples. 
+Bugs skitter across the surface of the water. You've never seen something like this before.
+At night, you lie in the river, staring up at the sky.
+You feel the strength draining from your bones. You know that you don't have much time left.
+You reflect on your journey.
+What a great adventure.
+...
+...
+You can't help but wonder what was at the top of the stream. ->END
     
 === weak ===
 The longer we stay in freshwater, the weaker we get.
@@ -879,66 +878,60 @@ The longer we stay in freshwater, the weaker we get.
 
     
 === lake ===
-You did it! You reached the top of the stream, in the mountains. What will you do now?
-+ Talk to non-salmon fish
-    ->otherfish
-+ Talk to salmon
-    ->Coginthemachine
-* {talked_to >= 30} Turn back
-    You don't feel like you belong here. You turn back. ->Thefriendswemadealongtheway
-* {talked_to < 30} Turn back
-    You don't feel like you belong here. You turn back. ->regrets
+You did it! You reached the top of the stream, in the mountains. 
+What happens now?
+I guess you have to find a mate.
+->END
     
-=otherfish
+=== otherfish ===
 Hello!
 + Hello.
--It's great to see you guys back.
-* It's actually my first time here...
+It's great to see you guys back.
++ + It's actually my first time here...
     Oh yeah. You guys leave and then come back at the same time every year. It's hard for a simple fish to keep track.
     Well, I hope you enjoy the lake!
     ->END
-* Where is the treasure?
++ + Where is the treasure?
     Treasure?
-    * * You know, I get to make a wish or something?
-        ???
-        The real treasure is the nature surrounding us! The magical phenomenon of life and rebirth!
-        * * * Umm that's cool and all but everyone told me they were looking for something here...
-            That's for you to discover for yourself. I can't help you there. 
-            ->END
-+ Goodbye. 
+    You know, I get to make a wish or something?
+    ???
+    The real treasure is the nature surrounding us! 
+    The magical phenomenon of life and rebirth!
+    Umm that's cool and all but everyone told me they were looking for something here...
+    That's for you to discover for yourself, bud. I can't help you there. 
+    ->END
++ + Goodbye. 
     Bye!
     ->END
 
 
 =Coginthemachine
--You see salmon going through the whole process of finding a mate, but you notice another lone salmon off to the side. You swim up to them.
-*The lone salmon
--do you ever wonder, why we're here in the first place?
-*yes 
-*no
-...i see...
-  - can i confess something?
-  *yes
-  ->hopeful
-  *no
-  ->cog
-  
-  =hopeful
-  ~ talked_to += 1
-  -to be honest, i'm not sure why i made it all this way.
-  - i mean, i came along because everyone else made it out to be a big deal, but it turns out i never knew what i was looking for in the first place, even now that i'm here.
-  - ...
-  - especially now that i'm here
-    - do you have any dreams?
-      *yes 
-      *No
-      -oh, that's nice...
-     - ...Hey um now that we made it should we do that whole reproduction thing?
-     *Sure
-     ->reproduced
-     *No
-        - You sit in silence together.
-        ->ending
+-You see salmon going through the whole process of finding a mate, but you notice another lone salmon off to the side. You swim up to them.->END
+
+=== endingfish ===
+Do you ever wonder, why we're here in the first place?
++Yes 
++No
+- ...I see...
+Can i confess something?
+ + Sure ->hopeful
+ + I'm not interested. ->cog
+
+=== hopeful ===
+~ talked_to += 1
+ To be honest, i'm not sure why i made it all this way.
+ I mean, i came along because everyone else made it out to be a big deal, 
+ but it turns out i never knew what i was looking for in the first place, even now that i'm here.
+ Especially now that i'm here
+Do you have any dreams?
++ Yes 
++ No
+- Must be nice...
+...Hey um now that we made it should we do that whole reproduction thing?
++Sure ->reproduced
++No
+    You sit in silence together.
+    ->ending
      //Oh okay...hey Wait UP!
      //->Thefriendswemadealongtheway2
       
@@ -957,17 +950,21 @@ Hello!
     You turn back, hesitant. As you swim downstream, the scene flashes by you. What was it all for? You wonder if you could have done more. ->END
 
 === ending ===
- - They were right.
- - The stars are beautiful here... ->END
+They were right.
+The stars are beautiful here... ->END
  
 === reproduced ===
-You did it, you fulfilled your wordly obligation. But you don't feel satisfied. Is this it? Is this all there is to the world? You think back on your journey.
-- flashbacks to scenes.
-* {talked_to >= 30} No, it's not. 
-    You think about all the hopes and dreams of the salmon. They are worthwhile. They do mean something, and they mean something to you. You are too tired to swim any longer, and stare up at the twinkling stars.
+You did it, you fulfilled your wordly obligation. 
+But you don't feel satisfied. Is this it? Is this all there is to the world? 
+You think back on your journey.
++ {talked_to >= 30} No, it's not. 
+    You think about all the hopes and dreams of the salmon. 
+    They are worthwhile. They do mean something, and they mean something to you.
+    You are too tired to swim any longer, and stare up at the twinkling stars.
     ->ending
-* {talked_to < 30} ...
-    You think about the masses of fish swimming through the river as you float listlessly in the water, surrounded by darkness. The roaring sound of waves, the sound of nothingness...
++ {talked_to < 30} ...
+    You think about the masses of fish swimming through the river as you float listlessly in the water, surrounded by darkness. 
+    The roaring sound of waves, and the sound of nothingness...
     ->ending
  
 

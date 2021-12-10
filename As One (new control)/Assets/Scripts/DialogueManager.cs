@@ -7,6 +7,7 @@ using System.Collections;
 using RedBlueGames.Tools.TextTyper;
 using UnityEngine.EventSystems;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 /*
  This script works with Interactable.cs and integrates ink, 
  text mesh pro UI, a character avatar and a script for text effects
@@ -68,6 +69,7 @@ public class DialogueManager : MonoBehaviour
     //keep track of choices so can select with keyboard
     public List<Button> choice_buttons;
     private int current_button;
+    public Animator transitionanim;
 
     
     void Awake()
@@ -325,6 +327,9 @@ public class DialogueManager : MonoBehaviour
         player.SendMessage("UnFreeze");
 
         if (currentInteractable) { 
+            if (currentInteractable.id == "endingfish"  || currentInteractable.id == "altend") {
+                StartCoroutine(DelayLoadLevel("Title Screen"));
+            }
             currentInteractable.SendMessage("StopAnimate");
         }
         
@@ -497,6 +502,13 @@ public class DialogueManager : MonoBehaviour
 
 
         }
+    }
+
+    IEnumerator DelayLoadLevel(string lvl)
+    {
+        transitionanim.SetTrigger("Start");
+        yield return new WaitForSeconds(1.0f);
+        SceneManager.LoadScene(lvl);
     }
 
     
