@@ -46,7 +46,7 @@ VAR talked_to = 0
 ->END
 
 === seagull===
-{Squawk! The seagull swipes at you, nearly missing. Scary. | Scram, kid.} 
+{Squawk! The world is a dangerous place, boy. It's kill or be killed. | Scram, kid.} 
 ->END
 
 === out_of_bounds ===
@@ -92,15 +92,15 @@ VAR talked_to = 0
 
 === where_is_stuff ===
 + I'm new here, how do I get to the river? 
-    Swim northeast! If you follow the shoreline you'll find your way to the estuary, which leads to the river.
+    Swim north! If you follow the shoreline you'll find your way to the estuary, which leads to the river.
     + + What else is around here?
-        Hmm, there is some coral ahead, anda kelp forest to the east.
+        Hmm, there is some coral to the east, and a kelp forest to the west.
         ->END
     + + Goodbye
         See you at the estuary!
         ->END
 + What else is around here?
-    Hmm, there is some coral ahead, and a kelp forest to the east.
+    Hmm, there is some coral to th east, and a kelp forest to the west.
     ->END
 + Goodbye
     See you at the river!
@@ -119,7 +119,7 @@ Hurry up! We have to go!
 ->END
 
 === startingfish4 ===
-The ocean is so big!
+The ocean is so big! I just try to keep swimming forward.
 ->END
 
 === startingfish5 ===
@@ -189,7 +189,7 @@ land horses??
 === startingfish19 ===
 I think I've seen enough. I'm going to the estuary now.
 + Where is it?
-    Keep going east. You can't miss it.
+    Keep going north. You can't miss it.
     ->END
     
 === startingfish20 ===
@@ -202,7 +202,7 @@ The ocean is so vast...
 
 === startingfish22 ===
 It's so easy to get lost here.
-All I know is the estuary is in the northeast.
+All I know is that the river flows in the north.
 ->END
 
 === startingfish23 ===
@@ -259,13 +259,8 @@ I'm so excited and \#blessed for this opportunity. I'd like to thank my mentors,
     ->END
     
 === startingfish35 ===
-Do you have a moment to learn about blockchain?
-+ No.
-    ->END
-+ No thanks.
-    ->END
-+ Pleaes leave me alone.
-    ->END
+When I don't know what to do, I just keep moving forward.
+->END
 
 === startingfish36 ===
 Wow, I'm going to learn so much from this experience!
