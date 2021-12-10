@@ -44,12 +44,12 @@ VAR talked_to = 0
 ->END
 
 === seagull===
-{Squawk! The world is a dangerous place, boy. It's kill or be killed. | Scram, kid.} 
+{Squawk! The world is a dangerous place, boy. That's a fact of life. | Scram, kid.} 
 ->END
 
 === out_of_bounds ===
 - You feel like you should not be going this way.
-- You think you should be going north, and maybe west.
+- You think you should be going north.
 * How do you know this
 - Fish instinct.
 ->END
@@ -365,12 +365,13 @@ You come across a pair of sea horses.
     I'm Bethany!
     ++ Hello to both of you. I'm new here.
        Cheers to new friends! We love meeting new friends. Actually, we enjoy doing everything together, old or new. 
-       +++ Oh wow, that is impressive. How long have you two been together? You look lovely!
+       Oh wow, that is impressive. How long have you two been together? You look lovely!
        We've been together for ten days, but I know we are soulmates already.
-           ++++ I wish I had a relationship like that... I've always had commitment issues.
-               Oh no, that's terrible. As seahorses, once we find the one, we mate for life. We wish you that someday you will find your one and only love too. 
-               +++++ Thank you. I think that will happen once I get there, you know, the upstream place. It was so nice to meet you both. Bye!
-                    ->END
+       I wish I had a relationship like that... I've always had commitment issues.
+       Oh no, that's terrible. As seahorses, once we find the one, we mate for life.
+       We wish you that someday you will find your one and only love too. 
+       Thank you. I think that will happen once I get there, you know, the upstream place. It was so nice to meet you both. Bye!
+        ->END
            
            
     ++ Right... Sorry it's been a while, my memory is a little foggy. 
@@ -383,12 +384,12 @@ You come across a pair of sea horses.
            Oh, how's so? Do you want to talk about it? 
            ++++ Yes. I'm doubting about the purpose of swimming upstream. 
                 I'm not sure why I am doing that, or who will I be with when I'm there. They say that it is the place to go, it is the place where I will find my love, but will I? Or is that "love" worth it? 
-                That is totally understandable. To be very honest, we are not sure what to tell you, because we've never heard from anyone who actually went upstream. No one came back with their partner. We've only seen the kids come back...
+                That is totally understandable. To be very honest, we are not sure what to tell you. We've never heard from anyone who actually went upstream...but we do see the kids come back.
                 +++++ That is so strange. I'm feeling a bit pessimistic... 
                       I am worried now. Is swimming upstream actually going to make me happy? Is the magical place up there my ultimate goal in life? 
                       ->END
                 +++++ Maybe they are so happy with their life so that they decided to stay there. Right? 
-                    That's possible. We should always hope for the best. 
+                    I do hope so.
                     ++++++ I agree. It was so nice catching up with you, but I have to go now. Take care!
                          ->END
            ++++ No, actually, I think I am fine. 
@@ -461,13 +462,8 @@ The journey was just too much for you. You died, never knowing what the future c
 
 === vegan_seagull ===
 ~ talked_to += 1
-You see another seagull. You make eye contact.
-+ Run away 
+{I'm vegan. It's better for the environment. | It reduces CO2 emissions and saves water. | Do you want to know more? Cryptocurrency and NFTs are also terrible. | I don't know what else to say. Go look it up.} //this is just comedic relief and injecting some real facts into the game
 ->END
-+ Talk
-    {I'm vegan. It's better for the environment. | It reduces CO2 emissions and saves water. | Do you want to know more? Cryptocurrency and NFTs are also terrible. | I don't know what else to say. Go look it up.} //this is just comedic relief and injecting some real facts into the game
-    You return.
-    ->END
 
 === estuary ===
 You reach the estuary.
