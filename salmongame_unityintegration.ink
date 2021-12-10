@@ -6,8 +6,6 @@ VAR talked_to = 0
 //this is where the game begins if you don't end your last game at the top of the stream
 == begin_narration ===
 - every year, thousands of salmon swim upstream in what is known as a salmon run.
-+ [Continue]
-
 - this time, you heed the call of the waters.
 ->END
 

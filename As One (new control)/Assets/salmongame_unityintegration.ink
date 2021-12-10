@@ -6,8 +6,6 @@ VAR talked_to = 0
 //this is where the game begins if you don't end your last game at the top of the stream
 == begin_narration ===
 - every year, thousands of salmon swim upstream in what is known as a salmon run.
-+ [Continue]
-
 - this time, you heed the call of the waters.
 ->END
 
@@ -33,7 +31,9 @@ VAR talked_to = 0
 * [that it was a lively place] You remember that it was a lively place. 
                                 The area was full of life. You played in the stream, and there was so much to explore.
                                 You enjoyed being with everyone. But since then, you have all been separated.
-* [that it was a peaceful place] You remember it being a peaceful place. You lived without fear of predators. You lived blissfully with the other fish, and every day was full of happiness. But you haven't experienced that since then.
+* [that it was a peaceful place] You remember it being a peaceful place. 
+                                You lived without fear of predators. You lived blissfully with the other fish, and every day was full of happiness.
+                                But you haven't experienced that since then.
 * [that is was a terrible place] You don't like to think about it.
 -
 * Think about the future
@@ -44,7 +44,7 @@ VAR talked_to = 0
 ->END
 
 === seagull===
-{Squawk! The seagull swipes at you, nearly missing. Scary. | Scram, kid.} 
+{Squawk! The world is a dangerous place, boy. It's kill or be killed. | Scram, kid.} 
 ->END
 
 === out_of_bounds ===
@@ -90,15 +90,15 @@ VAR talked_to = 0
 
 === where_is_stuff ===
 + I'm new here, how do I get to the river? 
-    Swim northeast! If you follow the shoreline you'll find your way to the estuary, which leads to the river.
+    Swim north! If you follow the shoreline you'll find your way to the estuary, which leads to the river.
     + + What else is around here?
-        Hmm, there is some coral ahead, anda kelp forest to the east.
+        Hmm, there is some coral to the east, and a kelp forest to the west.
         ->END
     + + Goodbye
         See you at the estuary!
         ->END
 + What else is around here?
-    Hmm, there is some coral ahead, and a kelp forest to the east.
+    Hmm, there is some coral to th east, and a kelp forest to the west.
     ->END
 + Goodbye
     See you at the river!
@@ -117,7 +117,7 @@ Hurry up! We have to go!
 ->END
 
 === startingfish4 ===
-The ocean is so big!
+The ocean is so big! I just try to keep swimming forward.
 ->END
 
 === startingfish5 ===
@@ -187,7 +187,7 @@ land horses??
 === startingfish19 ===
 I think I've seen enough. I'm going to the estuary now.
 + Where is it?
-    Keep going east. You can't miss it.
+    Keep going north. You can't miss it.
     ->END
     
 === startingfish20 ===
@@ -200,7 +200,7 @@ The ocean is so vast...
 
 === startingfish22 ===
 It's so easy to get lost here.
-All I know is the estuary is in the northeast.
+All I know is that the river flows in the north.
 ->END
 
 === startingfish23 ===
@@ -251,19 +251,14 @@ We're on our way!
 ->END
 
 === startingfish34 ===
-I'm so excited and hashtag blessed for this opportunity. I'd like to thank my mentors, my supervisor,  my bus driver, my...
+I'm so excited and \#blessed for this opportunity. I'd like to thank my mentors, my supervisor,  my bus driver, my...
 + You leave them be.
     They continue rambling.
     ->END
     
 === startingfish35 ===
-Do you have a moment to learn about blockchain?
-+ No.
-    ->END
-+ No thanks.
-    ->END
-+ Pleaes leave me alone.
-    ->END
+When I don't know what to do, I just keep moving forward.
+->END
 
 === startingfish36 ===
 Wow, I'm going to learn so much from this experience!
@@ -339,17 +334,20 @@ Great! I love new friends!
          ->END
 + + You want to ask them another question. 
     Have you ever been there? You know, the estuary? 
-    Oh boy, I have not, and I find it interesting that I have been here forever, but I have never met any salmon heading back from the estuary...
-    + + + I wonder why that's the case.. Did they decide to stay there forever because of how beautiful it is? 
-        I do not know my friend, but I hope that is the case. I hope the best for you. 
+    Oh boy, I have not. I cannot move from my home here, you see.
+    Though, I find it interesting that I have been here forever, but I have never met any salmon heading back from the estuary...
+    + + + [I wonder why that's the case...]
+        I wonder why that's the case. Did they decide to stay there forever because of how beautiful it is? 
+        I do not know my friend, but I hope that is true. I hope the best for you. 
         ->END 
 +   No 
     Well, welcome back. Isn't this place mesmerizing? 
     + + Yes, and I want to know more about the estuary.
         I would love to tell you more about it, but I just have never heard anything from any salmon who actually went there and came back. I'm so sorry. 
         ->END
-    + + Yes, and I am just here to listen to you rambling on life. 
-        Somedays I doubt if I will be happier if I can swim. You know, us coral reefs live long long lives, between 5,000 and 10,000 years old. We see the same views everyday. But I know for a fact that just by being here, I'm helping the lives of other sea plants, and that makes my life meaningful. I don't have to have a impressive destination to get to. I am comfortable being where I am because that is what I want. 
+    + + Yes, and I am just here to listen to you ramble on life. 
+        Somedays I doubt if I will be happier if I can swim. 
+        You know, us coral reefs live long long lives, between 5,000 and 10,000 years old. We see the same views everyday. But I know for a fact that just by being here, I'm helping the lives of other sea plants, and that makes my life meaningful. I don't have to have a impressive destination to get to. I am comfortable being where I am because that is what I want. 
         + + + That's wonderful to hear. But you know, some of us just gotta go to places...
             But is that what you actually want? For yourself?
             + + + + I don't know... That was a lovely talk... But I have to head back now.
