@@ -183,6 +183,12 @@ public class DialogueManager : MonoBehaviour
         justPressedUI = false;
 
         if (dialogueState == CHOICE_DISPLAYED) {
+            print("Choice button count: " + choice_buttons.Count);
+            if (choice_buttons.Count == 0) { 
+                print("Empty choice buttons");
+                return;
+            }
+            
             if (Input.GetKeyDown("w") || Input.GetKeyDown(KeyCode.UpArrow))
             {
                 current_button -= 1;
@@ -199,6 +205,9 @@ public class DialogueManager : MonoBehaviour
                     current_button = 0;
                 }
             }
+            current_button = Math.Max(0, current_button);
+            current_button = Math.Min(current_button, choice_buttons.Count - 1);
+            // print("Choice button index: " + current_button);
             EventSystem.current.SetSelectedGameObject(choice_buttons[current_button].gameObject);
         }
     }
@@ -207,6 +216,14 @@ public class DialogueManager : MonoBehaviour
     {
         //freeze the controller by sending a message so I don't have to know the specific class
         //what "freezing means" depends on the control system
+
+        // add edge case check for when user has exited the npc range after pressing enter
+        // if so, we don't start the dialogue
+        if (!currentInteractable) { 
+            print("Player has exited NPC range, will not start dialogue. ");
+            return;
+        }
+
         player.SendMessage("Freeze");
         
         //set the story at the knot
@@ -222,6 +239,19 @@ public class DialogueManager : MonoBehaviour
     // Continues over all the lines of text, then displays all the choices. If there are no choices, the story is finished!
     void ContinueDialogue()
     {
+
+        // add edge case check for when user has exited the npc range after pressing enter
+        // if so, we don't continue the dialogue
+        if (!currentInteractable) { 
+            print("Player has exited NPC range, will not continue dialogue. ");
+
+            // similar to EndDialogue()
+            RemoveChoices();
+            Cursor.lockState = CursorLockMode.Locked;
+            dialogueState = DIALOGUE_OFF;
+            player.SendMessage("UnFreeze");
+            return;
+        }
 
         // Remove all choices and text from UI
         RemoveChoices();
@@ -283,7 +313,9 @@ public class DialogueManager : MonoBehaviour
 
         //presumably still in range?
         line.maxVisibleCharacters = int.MaxValue;
-        line.text = currentInteractable.actionText;
+        if (currentInteractable) { 
+            line.text = currentInteractable.actionText;
+        }
 
         Cursor.lockState = CursorLockMode.Locked;
         
@@ -291,7 +323,11 @@ public class DialogueManager : MonoBehaviour
 
         //freeze the controller by sending a message so I don't have to know the specific class
         player.SendMessage("UnFreeze");
-        currentInteractable.SendMessage("StopAnimate");
+
+        if (currentInteractable) { 
+            currentInteractable.SendMessage("StopAnimate");
+        }
+        
     }
 
     // When we click the choice button, tell the story to choose that choice!
@@ -382,7 +418,12 @@ public class DialogueManager : MonoBehaviour
     }
 
     private void OnCharacterPrinted(string printedCharacter)
-    {
+    { 
+        if (!currentInteractable) { 
+            print("Player has moved out of range");
+            return;
+        }
+
         //sound and audiosources are set
         if (currentInteractable.audioSource != null && currentInteractable.typeSound != null)
         {
